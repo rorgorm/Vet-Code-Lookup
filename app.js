@@ -91,10 +91,14 @@
       const copyBtn = document.createElement('button');
       copyBtn.className = 'copy-btn';
       copyBtn.textContent = 'Copy';
-      copyBtn.addEventListener('click', async () => {
-        await copyToClipboard(row.Code);
-        flash(copyBtn);
-      });
+    copyBtn.addEventListener('click', async () => {
+  await copyToClipboard(row.Code);
+  flash(copyBtn);
+  // ✅ Clear search and show full list again
+  searchEl.value = '';
+  filtered = rows;
+  render();
+});
 
       right.appendChild(prices);
       right.appendChild(copyBtn);
