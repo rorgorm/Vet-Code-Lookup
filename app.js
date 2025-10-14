@@ -1,8 +1,8 @@
 (function(){
-  // Put your CSV here: data/products.csv (recommended)
   const csvUrl = 'data/products.csv';
 
-  const searchEl = document.getElementById('search');
+  // Use LET so we can reassign after cloning the node
+  let searchEl = document.getElementById('search');
   const resultsEl = document.getElementById('results');
   const metaEl = document.getElementById('meta');
   const copySelectedBtn = document.getElementById('copySelected');
@@ -32,7 +32,6 @@
     try{
       await navigator.clipboard.writeText(text);
     } catch(e){
-      // iOS fallback
       const ta = document.createElement('textarea');
       ta.value = text;
       document.body.appendChild(ta);
@@ -58,16 +57,15 @@
       const cb = document.createElement('input');
       cb.type = 'checkbox';
       cb.checked = selected.has(id);
-  cb.addEventListener('change', () => {
-  if (cb.checked) selected.add(id);
-  else selected.delete(id);
-  updateSelectedState();
+      cb.addEventListener('change', () => {
+        if (cb.checked) selected.add(id); else selected.delete(id);
+        updateSelectedState();
 
-  // Clear search + show full list
-  filtered = rows;
-  render();
-  clearSearch();
-});
+        // Clear search + show full list
+        filtered = rows;
+        render();
+        clearSearchHard();  // ← rock-solid iOS fix
+      });
 
       const main = document.createElement('div');
       main.className = 'item-main';
@@ -96,15 +94,15 @@
       const copyBtn = document.createElement('button');
       copyBtn.className = 'copy-btn';
       copyBtn.textContent = 'Copy';
-    copyBtn.addEventListener('click', async () => {
-  await copyToClipboard(row.Code);
-  flash(copyBtn);
+      copyBtn.addEventListener('click', async () => {
+        await copyToClipboard(row.Code);
+        flash(copyBtn);
 
-  // Clear search + show full list
-  filtered = rows;
-  render();
-  clearSearch();
-});
+        // Clear search + show full list
+        filtered = rows;
+        render();
+        clearSearchHard();  // ← rock-solid iOS fix
+      });
 
       right.appendChild(prices);
       right.appendChild(copyBtn);
@@ -129,17 +127,48 @@
 
   function debounce(fn, ms){ let t; return (...a)=>{ clearTimeout(t); t=setTimeout(()=>fn(...a), ms); }; }
 
+  // Attach the input listener (we call this again if we replace the node)
+  function attachSearchHandlers() {
+    searchEl.addEventListener('input', debounce(() => {
+      const q = searchEl.value.trim();
+      filtered = rows.filter(r => matches(q, r));
+      render();
+    }, 120));
+  }
+  attachSearchHandlers();
+
+  // Hard reset that also rebuilds the <input> node to defeat iOS "ghost text"
+  function clearSearchHard(){
+    // 1) Clear value and notify listeners
+    searchEl.value = '';
+    try { searchEl.setSelectionRange(0, 0); } catch(_) {}
+    searchEl.dispatchEvent(new Event('input', { bubbles: true, composed: true }));
+
+    // 2) iOS Safari sometimes paints stale text; rebuild the node
+    const old = searchEl;
+    const neu = old.cloneNode(true); // keeps attributes (id, placeholder, etc.)
+    old.parentNode.replaceChild(neu, old);
+    searchEl = neu; // update our reference
+
+    // 3) Reattach handlers and refocus for next search
+    attachSearchHandlers();
+    // Small raf to ensure repaint before focusing
+    requestAnimationFrame(() => {
+      searchEl.focus();
+      try { searchEl.setSelectionRange(0, 0); } catch(_) {}
+    });
+  }
+
   copySelectedBtn.addEventListener('click', async () => {
     if (!selected.size) return;
     await copyToClipboard(Array.from(selected).join('\n'));
     flash(copySelectedBtn);
-  });
 
-  searchEl.addEventListener('input', debounce(() => {
-    const q = searchEl.value.trim();
-    filtered = rows.filter(r => matches(q, r));
+    // Clear search + show full list
+    filtered = rows;
     render();
-  }, 120));
+    clearSearchHard();
+  });
 
   async function loadCSV(){
     const resp = await fetch(csvUrl, {cache:'no-cache'});
