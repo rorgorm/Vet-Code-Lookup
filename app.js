@@ -11,6 +11,7 @@
   let rows = [];
   let filtered = [];
   const selected = new Set();
+  let renderGeneration = 0;   // ← changes after each bulk copy to defeat iOS checkbox memory
 
   // ---------- Utils ----------
   function fmtGBP(x) {
@@ -77,14 +78,17 @@
   function render() {
     resultsEl.innerHTML = '';
     filtered.forEach((row) => {
-      const id = row.Code;
+      const id = String(row.Code || '');
       const item = document.createElement('div');
       item.className = 'item';
 
-      // Checkbox
+      // Checkbox (generation-specific name/id so iOS can't restore old "checked" states)
       const cb = document.createElement('input');
       cb.type = 'checkbox';
-      cb.checked = selected.has(id);
+      cb.name = `cb_${renderGeneration}_${id}`;
+      cb.id   = `cb_${renderGeneration}_${id}`;
+      cb.autocomplete = 'off';
+      cb.checked = selected.has(id);      // reflects our state only (cleared after bulk copy)
       cb.addEventListener('change', () => {
         if (cb.checked) selected.add(id); else selected.delete(id);
         updateSelectedState();
@@ -188,21 +192,24 @@
 
   // ---------- Full UI reset after bulk copy ----------
   function resetUIFull() {
-    // Clear selection state
+    // 1) Clear selection state
     selected.clear();
     updateSelectedState();
 
-    // Force-drop any lingering checkbox 'checked' states (iOS)
-    const old = resultsEl;
-    const neu = old.cloneNode(false); // empty clone, no children
-    old.parentNode.replaceChild(neu, old);
-    resultsEl = neu; // update reference
+    // 2) Bump generation so new checkboxes have new names/ids (prevents iOS restoring checked)
+    renderGeneration++;
 
-    // Restore full list, re-render fresh (all boxes unchecked)
+    // 3) Force-drop any lingering DOM state (extra blet-and-braces)
+    const old = resultsEl;
+    const neu = old.cloneNode(false); // empty clone, keeps id
+    old.parentNode.replaceChild(neu, old);
+    resultsEl = neu;
+
+    // 4) Restore full list, re-render fresh (all boxes unchecked)
     filtered = rows;
     render();
 
-    // Clear search and refocus for the next batch
+    // 5) Clear search and refocus for the next batch
     armSearchClear();
     searchEl.focus();
 
