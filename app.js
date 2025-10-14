@@ -111,15 +111,26 @@
       const copyBtn = document.createElement('button');
       copyBtn.className = 'copy-btn';
       copyBtn.textContent = 'Copy';
-      copyBtn.addEventListener('click', async () => {
-        await copyToClipboard(row.Code);
-        flash(copyBtn);
-        // After copying, reset to full list and arm clear
-        filtered = rows;
-        render();
-        armSearchClear();
-        searchEl.focus();
-      });
+      copySelectedBtn.addEventListener('click', async () => {
+  if (!selected.size) return;
+
+  // 1) Copy currently selected codes (one per line)
+  await copyToClipboard(Array.from(selected).join('\n'));
+  flash(copySelectedBtn);
+
+  // 2) Reset everything for the next batch
+  selected.clear();          // no items selected
+  updateSelectedState();     // disable the button
+  filtered = rows;           // show full list again
+  render();                  // re-render (checkboxes all unchecked)
+
+  // 3) Clear the search field (iOS-safe one-shot clear) and refocus
+  armSearchClear();
+  searchEl.focus();
+
+  // Optional: jump back to top if you’ve scrolled
+  try { window.scrollTo({ top: 0, behavior: 'instant' }); } catch(_) {}
+});
 
       right.appendChild(prices);
       right.appendChild(copyBtn);
