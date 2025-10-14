@@ -1,72 +1,88 @@
-(function(){
+(function () {
   const csvUrl = 'data/products.csv';
 
-  // Use LET so we can reassign after cloning the node
+  // Elements (use let so we can adjust if needed)
   let searchEl = document.getElementById('search');
   const resultsEl = document.getElementById('results');
   const metaEl = document.getElementById('meta');
   const copySelectedBtn = document.getElementById('copySelected');
 
+  // State
   let rows = [];
   let filtered = [];
   const selected = new Set();
 
-  function fmtGBP(x){
+  // ----- Utils -----
+  function fmtGBP(x) {
     if (x === null || x === undefined || x === '') return '£0.00';
-    let n = typeof x === 'number' ? x : parseFloat(String(x).replace(/[^\d.-]/g,''));
+    let n = typeof x === 'number' ? x : parseFloat(String(x).replace(/[^\d.-]/g, ''));
     if (!isFinite(n)) n = 0;
     return '£' + n.toFixed(2);
   }
 
-  function matches(q, row){
+  function matches(q, row) {
     if (!q) return true;
     q = q.toLowerCase();
-    return (row.Code||'').toLowerCase().includes(q) || (row.Description||'').toLowerCase().includes(q);
+    return (row.Code || '').toLowerCase().includes(q)
+        || (row.Description || '').toLowerCase().includes(q);
   }
 
-  function updateSelectedState(){
-    copySelectedBtn.disabled = selected.size === 0;
+  function normalizeRow(d) {
+    return {
+      Code: d['Code'] ?? d['code'] ?? d['CODE'] ?? '',
+      Description: d['Description'] ?? d['Name'] ?? d['DESCRIPTION'] ?? '',
+      'Sell price exc VAT': d['Sell price exc VAT'] ?? d['Ex VAT'] ?? d['Price ex VAT'] ?? d['sell_price_ex_vat'] ?? '',
+      'Sell price inc VAT': d['Sell price inc VAT'] ?? d['Inc VAT'] ?? d['Price inc VAT'] ?? d['sell_price_inc_vat'] ?? '',
+    };
   }
 
-  async function copyToClipboard(text){
-    try{
+  function debounce(fn, ms) {
+    let t;
+    return (...a) => { clearTimeout(t); t = setTimeout(() => fn(...a), ms); };
+  }
+
+  async function copyToClipboard(text) {
+    try {
       await navigator.clipboard.writeText(text);
-    } catch(e){
+    } catch {
       const ta = document.createElement('textarea');
       ta.value = text;
       document.body.appendChild(ta);
       ta.select();
-      try{ document.execCommand('copy'); } finally { document.body.removeChild(ta); }
+      try { document.execCommand('copy'); } finally { document.body.removeChild(ta); }
     }
   }
 
-  function flash(el){
+  function flash(el) {
     const old = el.textContent;
     el.textContent = '✓ Copied';
     el.style.borderColor = 'var(--ok)';
-    setTimeout(()=>{ el.textContent = old; el.style.borderColor = 'var(--border)'; }, 1200);
+    setTimeout(() => { el.textContent = old; el.style.borderColor = 'var(--border)'; }, 1200);
   }
 
-  function render(){
+  // ----- Render -----
+  function render() {
     resultsEl.innerHTML = '';
     filtered.forEach((row) => {
       const id = row.Code;
       const item = document.createElement('div');
       item.className = 'item';
 
+      // Checkbox
       const cb = document.createElement('input');
       cb.type = 'checkbox';
       cb.checked = selected.has(id);
       cb.addEventListener('change', () => {
         if (cb.checked) selected.add(id); else selected.delete(id);
         updateSelectedState();
-
-        // Clear search + show full list
+        // After selecting an item, reset to full list and arm clear
         filtered = rows;
         render();
-        clearSearchHard();  // ← rock-solid iOS fix
+        armSearchClear();
+        searchEl.focus();
       });
 
+      // Main (code + description)
       const main = document.createElement('div');
       main.className = 'item-main';
 
@@ -81,6 +97,7 @@
       main.appendChild(code);
       main.appendChild(desc);
 
+      // Right (prices + copy)
       const right = document.createElement('div');
       const prices = document.createElement('div');
       prices.className = 'prices';
@@ -97,11 +114,11 @@
       copyBtn.addEventListener('click', async () => {
         await copyToClipboard(row.Code);
         flash(copyBtn);
-
-        // Clear search + show full list
+        // After copying, reset to full list and arm clear
         filtered = rows;
         render();
-        clearSearchHard();  // ← rock-solid iOS fix
+        armSearchClear();
+        searchEl.focus();
       });
 
       right.appendChild(prices);
@@ -112,101 +129,128 @@
       item.appendChild(right);
       resultsEl.appendChild(item);
     });
-    metaEl.textContent = `${filtered.length} item${filtered.length!==1?'s':''}`;
+    metaEl.textContent = `${filtered.length} item${filtered.length !== 1 ? 's' : ''}`;
     updateSelectedState();
   }
 
-  function normalizeRow(d){
-    return {
-      Code: d['Code'] ?? d['code'] ?? d['CODE'] ?? '',
-      Description: d['Description'] ?? d['Name'] ?? d['DESCRIPTION'] ?? '',
-      'Sell price exc VAT': d['Sell price exc VAT'] ?? d['Ex VAT'] ?? d['Price ex VAT'] ?? d['sell_price_ex_vat'] ?? '',
-      'Sell price inc VAT': d['Sell price inc VAT'] ?? d['Inc VAT'] ?? d['Price inc VAT'] ?? d['sell_price_inc_vat'] ?? '',
-    };
+  function updateSelectedState() {
+    copySelectedBtn.disabled = selected.size === 0;
   }
 
-  function debounce(fn, ms){ let t; return (...a)=>{ clearTimeout(t); t=setTimeout(()=>fn(...a), ms); }; }
+  // ----- “One-shot clear” to defeat iOS sticky text -----
+  let shouldClearOnNextInput = false;
 
-  // Attach the input listener (we call this again if we replace the node)
-  function attachSearchHandlers() {
-    searchEl.addEventListener('input', debounce(() => {
-      const q = searchEl.value.trim();
-      filtered = rows.filter(r => matches(q, r));
-      render();
-    }, 120));
-  }
-  attachSearchHandlers();
-
-  // Hard reset that also rebuilds the <input> node to defeat iOS "ghost text"
-  function clearSearchHard(){
-    // 1) Clear value and notify listeners
+  function armSearchClear() {
+    // Logically clear: the next input/paste REPLACES any ghost text
+    shouldClearOnNextInput = true;
+    // Also visually clear (if iOS ghosts it, the logic below still wins)
     searchEl.value = '';
-    try { searchEl.setSelectionRange(0, 0); } catch(_) {}
-    searchEl.dispatchEvent(new Event('input', { bubbles: true, composed: true }));
-
-    // 2) iOS Safari sometimes paints stale text; rebuild the node
-    const old = searchEl;
-    const neu = old.cloneNode(true); // keeps attributes (id, placeholder, etc.)
-    old.parentNode.replaceChild(neu, old);
-    searchEl = neu; // update our reference
-
-    // 3) Reattach handlers and refocus for next search
-    attachSearchHandlers();
-    // Small raf to ensure repaint before focusing
-    requestAnimationFrame(() => {
-      searchEl.focus();
-      try { searchEl.setSelectionRange(0, 0); } catch(_) {}
-    });
+    // Put caret at start/end safely
+    try { searchEl.setSelectionRange(0, 0); } catch {}
   }
 
+  // Debounced filter on normal input
+  const onSearchInput = debounce(() => {
+    const q = searchEl.value.trim();
+    filtered = rows.filter(r => matches(q, r));
+    render();
+  }, 120);
+
+  searchEl.addEventListener('input', onSearchInput);
+
+  // Replace instead of append on the very next keystroke if armed
+  searchEl.addEventListener('beforeinput', (e) => {
+    if (!shouldClearOnNextInput) return;
+    // Take the incoming data (could be null for deletions)
+    const incoming = e.data ?? '';
+    // Prevent default so iOS doesn’t append to ghost text
+    e.preventDefault();
+    searchEl.value = incoming;
+    shouldClearOnNextInput = false;
+    // Update immediately
+    const q = searchEl.value.trim();
+    filtered = rows.filter(r => matches(q, r));
+    render();
+  });
+
+  // Same idea for paste
+  searchEl.addEventListener('paste', (e) => {
+    if (!shouldClearOnNextInput) return;
+    e.preventDefault();
+    const text = (e.clipboardData || window.clipboardData).getData('text');
+    searchEl.value = text;
+    shouldClearOnNextInput = false;
+    const q = searchEl.value.trim();
+    filtered = rows.filter(r => matches(q, r));
+    render();
+  });
+
+  // Keep caret sensible when focusing
+  searchEl.addEventListener('focus', () => {
+    try {
+      const len = searchEl.value.length;
+      searchEl.setSelectionRange(len, len);
+    } catch {}
+  });
+
+  // ----- Bulk copy -----
   copySelectedBtn.addEventListener('click', async () => {
     if (!selected.size) return;
     await copyToClipboard(Array.from(selected).join('\n'));
     flash(copySelectedBtn);
-
-    // Clear search + show full list
     filtered = rows;
     render();
-    clearSearchHard();
+    armSearchClear();
+    searchEl.focus();
   });
 
-  async function loadCSV(){
-    const resp = await fetch(csvUrl, {cache:'no-cache'});
+  // ----- Data load -----
+  async function loadCSV() {
+    const resp = await fetch(csvUrl, { cache: 'no-cache' });
     if (!resp.ok) throw new Error('Failed to load products CSV');
     const text = await resp.text();
-    if (typeof Papa !== 'undefined' && Papa.parse){
-      const parsed = Papa.parse(text, {header:true, skipEmptyLines:true});
+
+    if (typeof Papa !== 'undefined' && Papa.parse) {
+      const parsed = Papa.parse(text, { header: true, skipEmptyLines: true });
       return parsed.data;
     }
-    // Fallback tiny parser
-    const lines = text.replace(/\r\n/g,'\n').replace(/\r/g,'\n').split('\n');
+
+    // Minimal fallback CSV parser
+    const lines = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n').split('\n');
     let out = [], cur = [], inQ = false, field = '', headers;
-    const pushField=()=>{ cur.push(field); field=''; };
-    const pushRow=()=>{ if (cur.length) out.push(cur); cur=[]; };
-    for (let i=0;i<lines.length;i++){
+    const pushField = () => { cur.push(field); field = ''; };
+    const pushRow = () => { if (cur.length) out.push(cur); cur = []; };
+
+    for (let i = 0; i < lines.length; i++) {
       const line = lines[i];
-      for (let j=0;j<line.length;j++){
+      for (let j = 0; j < line.length; j++) {
         const ch = line[j];
-        if (ch === '"'){ if (inQ && line[j+1] === '"'){ field+='"'; j++; } else inQ = !inQ; }
-        else if (ch === ',' && !inQ){ pushField(); }
-        else { field += ch; }
+        if (ch === '"') {
+          if (inQ && line[j + 1] === '"') { field += '"'; j++; }
+          else inQ = !inQ;
+        } else if (ch === ',' && !inQ) {
+          pushField();
+        } else {
+          field += ch;
+        }
       }
-      if (inQ){ field += '\n'; } else { pushField(); pushRow(); }
+      if (inQ) { field += '\n'; } else { pushField(); pushRow(); }
     }
+
     headers = out.shift() || [];
     return out.map(row => {
       const obj = {};
-      for (let i=0;i<headers.length;i++) obj[headers[i]?.trim()] = (row[i] ?? '').trim();
+      for (let i = 0; i < headers.length; i++) obj[headers[i]?.trim()] = (row[i] ?? '').trim();
       return obj;
     });
   }
 
   // Boot
   loadCSV().then(data => {
-    rows = (data||[]).map(normalizeRow).filter(r => r.Code);
+    rows = (data || []).map(normalizeRow).filter(r => r.Code);
     filtered = rows;
     render();
   }).catch(err => {
-    resultsEl.innerHTML = `<div style="padding:16px;color:#ffb3b3;">Failed to load products: ${err?.message||err}</div>`;
+    resultsEl.innerHTML = `<div style="padding:16px;color:#ffb3b3;">Failed to load products: ${err?.message || err}</div>`;
   });
 })();
