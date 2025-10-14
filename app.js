@@ -58,11 +58,16 @@
       const cb = document.createElement('input');
       cb.type = 'checkbox';
       cb.checked = selected.has(id);
-      cb.addEventListener('change', () => {
-        if (cb.checked) selected.add(id);
-        else selected.delete(id);
-        updateSelectedState();
-      });
+  cb.addEventListener('change', () => {
+  if (cb.checked) selected.add(id);
+  else selected.delete(id);
+  updateSelectedState();
+
+  // Clear search + show full list
+  filtered = rows;
+  render();
+  clearSearch();
+});
 
       const main = document.createElement('div');
       main.className = 'item-main';
@@ -94,10 +99,11 @@
     copyBtn.addEventListener('click', async () => {
   await copyToClipboard(row.Code);
   flash(copyBtn);
-  // ✅ Clear search and show full list again
-  searchEl.value = '';
+
+  // Clear search + show full list
   filtered = rows;
   render();
+  clearSearch();
 });
 
       right.appendChild(prices);
