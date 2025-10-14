@@ -1,7 +1,7 @@
 (function () {
   const csvUrl = 'data/products.csv';
 
-  // Elements (let so we can reassign resultsEl if needed)
+  // Elements (let so we can reassign resultsEl if needed later if needed)
   let searchEl = document.getElementById('search');
   let resultsEl = document.getElementById('results');
   const metaEl = document.getElementById('meta');
@@ -11,7 +11,6 @@
   let rows = [];
   let filtered = [];
   const selected = new Set();
-  let renderGeneration = 0;   // ← changes after each bulk copy to defeat iOS checkbox memory
 
   // ---------- Utils ----------
   function fmtGBP(x) {
@@ -63,18 +62,70 @@
 
   function updateSelectedState() {
     copySelectedBtn.disabled = selected.size === 0;
+    metaEl.textContent = `${filtered.length} item${filtered.length !== 1 ? 's' : ''}`;
   }
 
   // ---------- iOS-safe one-shot search clear ----------
   let shouldClearOnNextInput = false;
-
   function armSearchClear() {
     shouldClearOnNextInput = true;     // next key/paste replaces content
     searchEl.value = '';               // visually clear
     try { searchEl.setSelectionRange(0, 0); } catch {}
   }
 
-  // ---------- Rendering ----------
+  // ---------- Rendering (custom checkbox toggles) ----------
+  function makeToggle(id) {
+    const t = document.createElement('div');
+    t.setAttribute('role', 'checkbox');
+    t.setAttribute('tabindex', '0');
+    t.setAttribute('aria-checked', selected.has(id) ? 'true' : 'false');
+    t.className = 'toggle';
+    // Minimal styles inline to avoid CSS edits; inherits your button styling
+    t.style.minWidth = '22px';
+    t.style.minHeight = '22px';
+    t.style.border = '1px solid var(--border)';
+    t.style.borderRadius = '6px';
+    t.style.display = 'inline-flex';
+    t.style.alignItems = 'center';
+    t.style.justifyContent = 'center';
+    t.style.userSelect = 'none';
+    t.style.cursor = 'pointer';
+    t.textContent = selected.has(id) ? '✓' : '';
+
+    function setChecked(on) {
+      if (on) {
+        selected.add(id);
+        t.setAttribute('aria-checked', 'true');
+        t.textContent = '✓';
+      } else {
+        selected.delete(id);
+        t.setAttribute('aria-checked', 'false');
+        t.textContent = '';
+      }
+      updateSelectedState();
+    }
+
+    t.addEventListener('click', () => {
+      const on = t.getAttribute('aria-checked') !== 'true';
+      setChecked(on);
+
+      // After selection, reset to full list + arm clear
+      filtered = rows;
+      render();
+      armSearchClear();
+      searchEl.focus();
+    });
+
+    t.addEventListener('keydown', (e) => {
+      if (e.key === ' ' || e.key === 'Enter') {
+        e.preventDefault();
+        t.click();
+      }
+    });
+
+    return t;
+  }
+
   function render() {
     resultsEl.innerHTML = '';
     filtered.forEach((row) => {
@@ -82,23 +133,8 @@
       const item = document.createElement('div');
       item.className = 'item';
 
-      // Checkbox (generation-specific name/id so iOS can't restore old "checked" states)
-      const cb = document.createElement('input');
-      cb.type = 'checkbox';
-      cb.name = `cb_${renderGeneration}_${id}`;
-      cb.id   = `cb_${renderGeneration}_${id}`;
-      cb.autocomplete = 'off';
-      cb.checked = selected.has(id);      // reflects our state only (cleared after bulk copy)
-      cb.addEventListener('change', () => {
-        if (cb.checked) selected.add(id); else selected.delete(id);
-        updateSelectedState();
-
-        // After selection, reset to full list + arm clear
-        filtered = rows;
-        render();
-        armSearchClear();
-        searchEl.focus();
-      });
+      // Custom toggle (replaces native checkbox)
+      const toggle = makeToggle(id);
 
       // Main (code + description)
       const main = document.createElement('div');
@@ -143,12 +179,11 @@
       right.appendChild(prices);
       right.appendChild(copyBtn);
 
-      item.appendChild(cb);
+      item.appendChild(toggle);
       item.appendChild(main);
       item.appendChild(right);
       resultsEl.appendChild(item);
     });
-    metaEl.textContent = `${filtered.length} item${filtered.length !== 1 ? 's' : ''}`;
     updateSelectedState();
   }
 
@@ -192,24 +227,15 @@
 
   // ---------- Full UI reset after bulk copy ----------
   function resetUIFull() {
-    // 1) Clear selection state
+    // Clear selection state
     selected.clear();
     updateSelectedState();
 
-    // 2) Bump generation so new checkboxes have new names/ids (prevents iOS restoring checked)
-    renderGeneration++;
-
-    // 3) Force-drop any lingering DOM state (extra blet-and-braces)
-    const old = resultsEl;
-    const neu = old.cloneNode(false); // empty clone, keeps id
-    old.parentNode.replaceChild(neu, old);
-    resultsEl = neu;
-
-    // 4) Restore full list, re-render fresh (all boxes unchecked)
+    // Re-render fresh list (no native inputs to “remember”)
     filtered = rows;
     render();
 
-    // 5) Clear search and refocus for the next batch
+    // Clear search and refocus for the next batch
     armSearchClear();
     searchEl.focus();
 
