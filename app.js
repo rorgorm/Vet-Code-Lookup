@@ -1,9 +1,9 @@
 (function () {
   const csvUrl = 'data/products.csv';
 
-  // Elements (use let so we can adjust if needed)
+  // Elements (let so we can reassign resultsEl if needed)
   let searchEl = document.getElementById('search');
-  const resultsEl = document.getElementById('results');
+  let resultsEl = document.getElementById('results');
   const metaEl = document.getElementById('meta');
   const copySelectedBtn = document.getElementById('copySelected');
 
@@ -12,7 +12,7 @@
   let filtered = [];
   const selected = new Set();
 
-  // ----- Utils -----
+  // ---------- Utils ----------
   function fmtGBP(x) {
     if (x === null || x === undefined || x === '') return '£0.00';
     let n = typeof x === 'number' ? x : parseFloat(String(x).replace(/[^\d.-]/g, ''));
@@ -60,7 +60,20 @@
     setTimeout(() => { el.textContent = old; el.style.borderColor = 'var(--border)'; }, 1200);
   }
 
-  // ----- Render -----
+  function updateSelectedState() {
+    copySelectedBtn.disabled = selected.size === 0;
+  }
+
+  // ---------- iOS-safe one-shot search clear ----------
+  let shouldClearOnNextInput = false;
+
+  function armSearchClear() {
+    shouldClearOnNextInput = true;     // next key/paste replaces content
+    searchEl.value = '';               // visually clear
+    try { searchEl.setSelectionRange(0, 0); } catch {}
+  }
+
+  // ---------- Rendering ----------
   function render() {
     resultsEl.innerHTML = '';
     filtered.forEach((row) => {
@@ -75,7 +88,8 @@
       cb.addEventListener('change', () => {
         if (cb.checked) selected.add(id); else selected.delete(id);
         updateSelectedState();
-        // After selecting an item, reset to full list and arm clear
+
+        // After selection, reset to full list + arm clear
         filtered = rows;
         render();
         armSearchClear();
@@ -111,26 +125,16 @@
       const copyBtn = document.createElement('button');
       copyBtn.className = 'copy-btn';
       copyBtn.textContent = 'Copy';
-      copySelectedBtn.addEventListener('click', async () => {
-  if (!selected.size) return;
+      copyBtn.addEventListener('click', async () => {
+        await copyToClipboard(row.Code);
+        flash(copyBtn);
 
-  // 1) Copy currently selected codes (one per line)
-  await copyToClipboard(Array.from(selected).join('\n'));
-  flash(copySelectedBtn);
-
-  // 2) Reset everything for the next batch
-  selected.clear();          // no items selected
-  updateSelectedState();     // disable the button
-  filtered = rows;           // show full list again
-  render();                  // re-render (checkboxes all unchecked)
-
-  // 3) Clear the search field (iOS-safe one-shot clear) and refocus
-  armSearchClear();
-  searchEl.focus();
-
-  // Optional: jump back to top if you’ve scrolled
-  try { window.scrollTo({ top: 0, behavior: 'instant' }); } catch(_) {}
-});
+        // After copying, reset to full list + arm clear
+        filtered = rows;
+        render();
+        armSearchClear();
+        searchEl.focus();
+      });
 
       right.appendChild(prices);
       right.appendChild(copyBtn);
@@ -144,47 +148,26 @@
     updateSelectedState();
   }
 
-  function updateSelectedState() {
-    copySelectedBtn.disabled = selected.size === 0;
-  }
-
-  // ----- “One-shot clear” to defeat iOS sticky text -----
-  let shouldClearOnNextInput = false;
-
-  function armSearchClear() {
-    // Logically clear: the next input/paste REPLACES any ghost text
-    shouldClearOnNextInput = true;
-    // Also visually clear (if iOS ghosts it, the logic below still wins)
-    searchEl.value = '';
-    // Put caret at start/end safely
-    try { searchEl.setSelectionRange(0, 0); } catch {}
-  }
-
-  // Debounced filter on normal input
+  // ---------- Search handlers ----------
   const onSearchInput = debounce(() => {
     const q = searchEl.value.trim();
     filtered = rows.filter(r => matches(q, r));
     render();
   }, 120);
-
   searchEl.addEventListener('input', onSearchInput);
 
-  // Replace instead of append on the very next keystroke if armed
+  // One-shot replace on next input/paste if armed (beats iOS ghost text)
   searchEl.addEventListener('beforeinput', (e) => {
     if (!shouldClearOnNextInput) return;
-    // Take the incoming data (could be null for deletions)
     const incoming = e.data ?? '';
-    // Prevent default so iOS doesn’t append to ghost text
     e.preventDefault();
     searchEl.value = incoming;
     shouldClearOnNextInput = false;
-    // Update immediately
     const q = searchEl.value.trim();
     filtered = rows.filter(r => matches(q, r));
     render();
   });
 
-  // Same idea for paste
   searchEl.addEventListener('paste', (e) => {
     if (!shouldClearOnNextInput) return;
     e.preventDefault();
@@ -196,7 +179,6 @@
     render();
   });
 
-  // Keep caret sensible when focusing
   searchEl.addEventListener('focus', () => {
     try {
       const len = searchEl.value.length;
@@ -204,18 +186,44 @@
     } catch {}
   });
 
-  // ----- Bulk copy -----
-  copySelectedBtn.addEventListener('click', async () => {
-    if (!selected.size) return;
-    await copyToClipboard(Array.from(selected).join('\n'));
-    flash(copySelectedBtn);
+  // ---------- Full UI reset after bulk copy ----------
+  function resetUIFull() {
+    // Clear selection state
+    selected.clear();
+    updateSelectedState();
+
+    // Force-drop any lingering checkbox 'checked' states (iOS)
+    const old = resultsEl;
+    const neu = old.cloneNode(false); // empty clone, no children
+    old.parentNode.replaceChild(neu, old);
+    resultsEl = neu; // update reference
+
+    // Restore full list, re-render fresh (all boxes unchecked)
     filtered = rows;
     render();
+
+    // Clear search and refocus for the next batch
     armSearchClear();
     searchEl.focus();
+
+    // Optional: jump back to top
+    try { window.scrollTo({ top: 0, behavior: 'instant' }); } catch {}
+  }
+
+  // ---------- Bulk copy ----------
+  copySelectedBtn.addEventListener('click', async () => {
+    if (!selected.size) return;
+
+    // Copy the selection (one code per line)
+    await copyToClipboard(Array.from(selected).join('\n'));
+    flash(copySelectedBtn);
+    copySelectedBtn.blur?.();
+
+    // Full reset so you can immediately start a fresh list
+    resetUIFull();
   });
 
-  // ----- Data load -----
+  // ---------- Data load ----------
   async function loadCSV() {
     const resp = await fetch(csvUrl, { cache: 'no-cache' });
     if (!resp.ok) throw new Error('Failed to load products CSV');
