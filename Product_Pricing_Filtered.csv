@@ -1,0 +1,865 @@
+Code,Description,Sell price exc VAT,Sell price inc VAT
+CREDIT250,£250 CREDITED TO ACCOUNT,£-250.00,£-250.00
+SYRINGE10,10ml Syringe,£0.27,£0.32
+KENALOG,18mg Triamcinolone (40mg/ml Inj) (per 1ml vial),£17.14,£20.57
+BLOODBAG,1L Blood Collection Bag,£16.25,£19.50
+SYRINGE20,20ml Sterile Syringe,£0.42,£0.50
+SCOPENEEDLE,21G 5mm Endoscopic Guarded Needle 2300mm (single use),£21.58,£25.90
+SYRINGE30,30ml Sterile Syringe,£0.96,£1.15
+SYRINGE3,3ml Sterile Syringe,£0.15,£0.18
+4CYTE,4CYTE Epiitalis Oral Supplement (per 1L container),£220.55,£264.66
+SYRINGEDOSING,50ml Dosing Syringe,£1.02,£1.22
+SYRINGE50,50ml Sterile Syringe,£0.98,£1.18
+SYRINGE5,5ml Sterile Syringe,£0.18,£0.22
+TAPABDOMPERITONEAL,Abdominocentesis / Peritoneal (Belly) Tap,£74.75,£89.70
+ABTHOLDING,ABT Holding Medium,£98.39,£118.07
+PAYMENTADJUSTMENT,Account Prepayment / Overpayment / Correction,£0.00,£0.00
+ACPTABSPECIALDISC,Acepromazine 10mg Tablet (per pot of 500 tablets) ***SPECIAL DISCOUNT***,£291.67,£350.00
+ACPTABS,Acepromazine 10mg Tablets (per tablet),£0.86,£1.03
+ACETYLCYSTEINE,Acetylcysteine Powder for Infusion (per 6g dose),£46.80,£56.16
+SAMPLESKIN,Acquire Skin/Hair Pluck/Scrape for Lab Testing,£17.50,£21.00
+ACTH,ACTH Blood Test (Rainbow Lab),£26.50,£31.80
+ADCORTYL,Adcortyl (Triamcinolone 10mg/ml Inj) (per 5ml bottle),£55.68,£66.82
+XRAYEXTRAPLATE,Additional XRAY View (per plate),£18.00,£21.60
+DUPHALYTEIV,"Administer 1L Duphalyte IV (includes drugs, catheter and giving set)",£92.27,£110.73
+PLASMABUNDLE,"Administer 1L Hyperimmune Plasma RE (including drugs, consumables and plasma)",£0.00,£0.00
+EPIDURAL,Administer Epidural Anaesthesia,£81.97,£98.36
+TILDREN,Administer Tildren Over 30 mins via IV Catheter in 1L Sterile Saline,£316.67,£380.00
+ADRENALINEVIAL,Adrenaline 1mg/ml (1:1000) (per vial),£5.00,£6.00
+IHCULTURE,Aerobic Bacterial Culture (48hrs) & Interpretation,£27.10,£32.52
+AERCULTURERAINBOW,Aerobic Culture (Rainbow Lab),£28.00,£33.60
+ALIZIN,Aglepristone (Alizin) 30mg/ml Injectable 10ml (per ml),£10.18,£12.22
+AINTREEMILK,Aintree Foal Milk (per 5kg tub),£80.82,£96.99
+ALBAROSAFROZENFIRST,Albarosa Frozen AI Package FIRST CYCLE,£515.00,£618.00
+ALBAROSAFROZENSUBSEQ,Albarosa Frozen AI Package SUBSEQUENT CYCLES,£437.50,£525.00
+ALBAROSACHILLEDFIRST,Albarosa Stud Chilled AI Package FIRST CYCLE,£395.00,£474.00
+ALBAROSACHILLEDSUBSEQ,Albarosa Stud Chilled AI Package SUBSEQUENT CYCLE,£345.00,£414.00
+ALLERGY,Allergy Testing (Rainbow Lab),£387.50,£465.00
+MYCOTOXINTESTING,Alltech Mycotoxin Testing (Rossdales Lab),£218.36,£262.03
+ALTRENOGEST,Altrenogest 50mg/ml Injectable (per ml) (7 day course per injection),£13.84,£16.61
+REGUMATE1L,Altrenogest Oral (1L Bottle Regumate),£167.72,£201.27
+REGUMATEPERML,Altrenogest Oral (Regumate) (per ml),£0.26,£0.31
+ALUSPRAY,Aluspray Aluminium Topical Antiseptic Spray,£22.59,£27.11
+AMIKIN,Amikin Amikacin Antibiotic (per 2ml vial),£10.40,£12.48
+AMOXICLAV500,Amoxicillin Clavulanic Acid Oral Antibiotic (per 500mg tablet),£2.58,£3.10
+AMOXICLAVSMALL50,Amoxicillin Clavulanic Acid Oral Antibiotic (per 50mg tablet),£0.50,£0.60
+ANAERCULTURERAINBOW,Anaerobic Culture (Rainbow Lab),£19.00,£22.80
+ANALGLANDS,Anal Gland Examination and Manual Expression,£24.46,£29.36
+ANGIOCATH14,Angiocath 14G Short-Stay Catheter,£7.88,£9.46
+ANIMALINTEX,Animalintex Foot Dressing,£5.38,£6.45
+ANNCEIDCHIPDNA,"ANNCE PRE foal registration, identification, microchip and DNA sample",£103.72,£124.46
+SENSITIVITY,Antimicrobial Sensitivity Testing (Rainbow Lab),£13.50,£16.20
+APHAPRODUCTCERT,APHA Official Veterinarian Certificate/Attestation,£154.50,£185.40
+APHAOVTIME,APHA Official Veterinarian Time (per 15 mins),£22.66,£27.19
+APHAOVTRAVELTIME,APHA Official Veterinarian Travel Time (per 15 mins),£22.66,£27.19
+APPPGE1PIPETTE,Application of PGE 1 to Oviducts via deep AI pipette (Includes drugs and consumables),£82.00,£98.40
+BANDAGEBELLY,Apply Abdominal Bandage,£21.89,£26.27
+BANDAGEHOCK,Apply Bandage to Hock,£27.29,£32.75
+BANDAGEKNEE,Apply Bandage to Knee,£27.30,£32.75
+BANDAGEFOOT,Apply Bandage/Dressing To Foot,£22.00,£26.40
+RINGSARCOID,Apply Elastrator Ring to Sarcoid,£46.09,£55.31
+POULTICE,Apply Foot Poultice,£18.03,£21.63
+AQUPHARM500SALINE,Aqupharm No 1 Sterile Saline (per 500ml bag),£6.33,£7.59
+AQUPHARM3H,Aqupharm Sterile Isotonic Hartmanns Solution (per 3 litre bag),£16.50,£19.80
+AQUPHARM5H,Aqupharm Sterile Isotonic Hartmanns Solution (per 5 litre bag),£40.28,£48.34
+AQUPHARM1H,Aqupharm Sterile Isotonic Hartmanns Solution (per litre),£15.00,£18.00
+ARTHRAMID,Arthramid Intra-Articular Gel (per 1ml syringe),£277.98,£333.58
+ASPIRATELN,Aspirate Sample From Lymph Node,£43.78,£52.53
+ASPIRIN250,Aspirin Oral Powder 100% (per 250g tub),£40.96,£49.15
+SPECULUM,Assess Vagina and Cervix via Speculum Examination,£28.33,£33.99
+ATIPAZOLE,Atipazole (Atipamezole) Injectable 10ml (per ml),£10.96,£13.15
+ATROPINE,Atropine Sulph 1% Minim,£4.80,£5.75
+BACTIVATE,Bactivate Intrauterine Infusion,£285.00,£342.00
+BANDAGELOWLIMB,Bandage Lower Limb,£22.00,£26.40
+SPINALNEEDLEBD,BD Quincke 18G 3.5 Inch Spinal Needle,£4.10,£4.92
+BETNOVATE100,Betnovate Cream (per 100g tube),£13.25,£15.90
+BLOODBILEACIDS,Bile Acids Blood Test (Rainbow Lab),£12.00,£14.40
+BILIRUBIN,Bilirubin Blood Test (Rainbow Lab),£12.00,£14.40
+BIOPSYPUNCH,Biopsy Punch (per single punch),£2.50,£3.00
+BITCHPROGESTERONEDISCOUNT,Bitch Progesterone Blood Test,£52.50,£63.00
+BITCHBLOODSAMPLEPROGESTERONE,Bitch Progesterone Blood Test (includes blood sampling fee),£65.00,£78.00
+BLOCKCARPALSHEATH,Block Carpal Sheath,£69.53,£83.43
+BLOCKCOFFIN,Block Coffin Joint,£57.42,£68.91
+JOINTBLOCKSTIFLE,Block Stifle Joint,£69.53,£83.43
+BLOODGIVINGSET,Blood Administration Set (with filter),£7.92,£9.50
+BLOODLACTATE,Blood Sample and Test Blood Lactate,£16.75,£20.10
+BLOODAMH,Blood Test Anti-Mullerian Hormone (AMH) (Rainbow Lab),£51.00,£61.20
+BLOODMUSCLE,Blood Test CK and AST Muscle Enzymes (Rainbow Lab),£24.00,£28.80
+COPPER,Blood Test Copper,£23.00,£27.60
+BLOODELECTROLYTES,Blood Test Electrolytes (Rainbow Lab),£42.00,£50.40
+BLOODECG,Blood Test Equine Chorionic Gonadotrophin (eCG) (Rainbow Lab),£32.00,£38.40
+BLOODGENERAL,Blood Test General Profile (Rainbow Lab),£76.00,£91.20
+BLOODINFLAM,Blood Test Inflammatory Profile (Rainbow Lab),£42.50,£51.00
+BLOODLAWSONIA,Blood Test Lawsonia Serology (Rainbow Lab),£34.00,£40.80
+BLOODLIVER,Blood Test Liver Profile (Rainbow Lab),£70.00,£84.00
+BLOODNEONAT,Blood Test Neonatal Profile (Rainbow Lab),£61.00,£73.20
+BLOODPERFORM,Blood Test Performance Profile (Rainbow Lab),£44.50,£53.40
+BLOODREDWORM,Blood Test Redworm ELISA (Rainbow Lab),£26.00,£31.20
+BLOODTAPEWORM,Blood Test Tapeworm ELISA (Rainbow Lab),£30.00,£36.00
+FROZENSEMENARRIVALS,"Booking In Fee - Account Creation, Straw Inspection & Handling, Documentation)",£75.00,£90.00
+BOZMERIXPOUCH,Boz Merix 1.5 KG Pouch,£260.50,£260.50
+BOZMERIX20,Boz Merix 20 x 10g Sachets,£48.50,£48.50
+BRAVECTOTABXL,Bravecto Extra Large Breed Dog Tablets (per box of 1 tablet),£34.96,£41.95
+BRAVTABLRGSINGLE,Bravecto Large Breed (20-40Kg) Dog Tablet (per box of 1 x 1000mg tablet),£35.99,£43.19
+BRAVTABLRGDUO,Bravecto Large Breed Dog Tablets (per box of 2 X500mg  tablets),£67.51,£81.01
+BRAVTABMEDDUO,Bravecto Medium Breed Dog (10-20kg) (per 2 X 500mg tablet),£63.46,£76.15
+BRAVTABMEDSINGLE,Bravecto Medium Breed Dog (10-20kg) (per 500mg tablet),£32.40,£38.88
+BRAVECTOTABSMALL,Bravecto Small Breed Dog (4.5-10kg) (per 250mg tablet),£24.84,£29.81
+BRAVECTOTABSMALL2DOSE,Bravecto Small Breed Dog (per box of 2 tablets),£48.18,£57.82
+BREATHEAZY,Breatheazy Flexineb Medication Cup (Including P&P),£81.95,£98.34
+MAREBSE,"Breeding Soundness Exam (Incl Perineal Conformation Assessment, Rectal US Repro Tract, Cervical Spec",£79.83,£95.79
+CONSULTBRIEF,Brief Consultation,£36.00,£43.20
+BAL,Broncho-Alveolar Lavage (Lung Wash) (includes sterile fluids and consumables),£87.55,£105.06
+UTERINEPROLAPSE,Broodmare Uterine Prolapse,£123.60,£148.32
+BRUCELLACANISELISA,Brucella canis iELISA (APHA),£11.54,£13.84
+BRUCELLACANISSAT,Brucella canis Serum Agglutination Test (SAT) (APHA),£20.91,£25.09
+BUDESONIDE,Budesonide (Pulmicort) (per pack of 20 nebules),£92.42,£110.90
+DISCOUNT,Bulk Discount,£0.00,£0.00
+BUSCOINJ,Buscopan 20mg/ml Inj per 1ml vial,£1.95,£2.34
+CALCIBEL,Calcibel 500ml Injectable,£15.36,£18.43
+V3,Call-Out Fee (V3) (20-30 miles round trip),£41.25,£49.50
+V4,Call-Out Fee (V4),£62.50,£75.00
+VFOC,Call-Out Free Of Charge,£0.00,£0.00
+CANAURAL15,Canaural Ear Drops 15ml,£17.20,£20.64
+CANAURAL25,Canaural Ear Drops 25ml,£22.28,£26.74
+ASSISTEDMATINGDOG,Canine Assisted Natural Mating,£62.50,£75.00
+CONSULTDOG,Canine Consultation,£47.29,£56.75
+CPSAEPROSTATE,Canine Prostate Specific Arginine Esterase (CPSE) (Axiom),£89.36,£107.24
+TCIFROZENBUNDLE,"Canine Transcervical Frozen Insemination (incl semen handling, thawing, extending & post-thaw assess",£0.00,£0.00
+VAGINALAI,Canine Vaginal Insemination,£64.38,£77.25
+VAGINALCYTOLOGY,"Canine Vaginal Smear, Stain and Cytology",£62.50,£75.00
+TCICHILLEDFRESHBUNDLE,Canine Video-endoscopic Transcervical Insemination (TCI),£0.00,£0.00
+TCIPROCEDURE,Canine Video-endoscopic Transcervical Insemination (TCI),£212.50,£255.00
+CANIPLUSAI,Caniplus AI Semen Extender (per ml),£5.76,£6.91
+CANIPLUSCHILL,Caniplus Premium Chilled Semen Extender (per ml),£6.50,£7.79
+CANIPLUSFREEZE,Caniplus Premium Semen Freezing Extender (per ml),£6.50,£7.79
+CARDISURE5,Cardisure 5mg (Pimobendan) Flavoured Tablets (per tablet),£0.75,£0.90
+CARTROPHEN,Cartrophen Injectable (per 10ml vial),£43.47,£52.16
+CASTRATESMALLDOG,Castrate Small Dog,£109.18,£131.02
+CASTRATE,"Castration (incl sedation, anaesthetic, peri-op pain relief + IV antibiotic)",£231.75,£278.10
+DRIPSETUP,Catheterisation & Set-Up for Intravenous Fluid Therapy,£49.70,£59.64
+CATHETERISEBLADDER,Catheterise Urinary Bladder,£41.20,£49.44
+EXCENEL4,Ceftiofur (Excenel) 50mg/ml Inj Antibiotic (per 4g bottle) (incl 80ml sterile water for i,£115.49,£138.59
+EXCENEL1,Ceftiofur (Excenel) 50mg/ml Injectable (per 1g bottle) (includes 20ml sterile water for inj),£49.04,£58.85
+INFUSIONCEFTIOFUR,Ceftiofur Intrauterine Infusion (1g Excenel & 60ml Sterile Saline),£72.25,£86.70
+CEMCULTURE,CEM Culture (Rainbow Lab),£28.00,£33.60
+CEMPCR,CEM PCR (Rainbow Lab),£40.00,£48.00
+CERTSALES,Certification For Sales (Includes Upload to Repository),£23.69,£28.43
+HEALTHDOCS,Certify Health Documents & Upload to Repository,£23.69,£28.43
+SCHEMECEMCULTURE,Cervical Swab for CEM Culture (Scheme),£0.00,£0.00
+CHANAZINE,Chanazine (Xylazine 100mg/ml) Inj per ml,£10.00,£12.00
+CHILLEDPACKAGEFIRST,Chilled AI Package FIRST CYCLE,£395.00,£474.00
+CHILLEDPACKAGESUBSEQ,Chilled AI Package SUBSEQUENT CYCLE,£312.50,£375.00
+CHILLEDSHIPPERPURCHASE,Chilled Shipper,£35.00,£42.00
+CHILLEDSHIPPERHIRE,Chilled Shipper Hire (up to 7 days),£10.42,£12.50
+CHLORAMPHENICOLEYE,Chloramphenicol 1% Eye Ointment,£11.81,£14.17
+CHLORAMPHENICOLPASTE,Chloramphenicol 500mg/ml Oral Antibiotic Paste (per 250ml tub),£149.34,£179.20
+HIBISCRUB5,Chlorhexidine Gluconate 4% Scrub 5L,£70.83,£85.00
+CHORULONBOX,Chorulon 1500IU Injectable (per box of 5 vials),£75.16,£90.19
+CHORULON,Chorulon 1500IU Injectable (per vial),£22.56,£27.07
+CLARITHRIFAMP,Clarithromycin-Rifampicin (750m-/500mg/10ml) Oral Antibiotic Paste (per 500ml tub),£182.53,£219.03
+DEBRIDEPROUDFLESH,Clean & Debride Granulation Tissue (Proud Flesh),£38.37,£46.04
+CLEANSHEATH,Clean Preputial Sheath and Penis,£33.48,£40.17
+SUTUREWOUND2,"Clean, Debride & Suture Large Wound",£115.00,£138.00
+SUTUREWOUND3,"Clean, Debride & Suture Multiple Wounds",£130.00,£156.00
+SUTUREWOUND1,"Clean, Debride & Suture Wound",£80.00,£96.00
+WOUND,"Clean, Flush & Debride Wound",£66.67,£80.00
+CLEEN,Cleen Phosphate Enema,£10.46,£12.55
+CLINDABACTIN55,Clindabactin 55mg (Clindamycin) (per 55mg tablet),£1.12,£1.34
+CLINISUT,Clinisut Blue Monofilament Suture,£6.25,£7.50
+CASTRATECLOSED,Closed Castration Under General Anaesthetic,£309.00,£370.80
+SEMENANALYSIS,"Collect & Analyse Semen (Concentration, Motility, pH, Morphology, Vitality & Report)",£229.17,£275.00
+CHILLEDCOLLECTPROCESS,Collect & Process Semen for Chilled Distrubution (Incl extender & transport box hire),£162.50,£195.00
+COLLECTPLASMA,Collect Blood for Plasma,£21.89,£26.27
+EYESERUM,"Collect Blood, Centrifuge and Prepare Autologous Eye Serum with EDTA",£71.07,£85.28
+CONFORMINGBANDAGE,Comforming Bandage (per 10cm roll),£2.54,£3.05
+WEATHERBYSIDONLY,Complete Markings for Weatherby’s ID & Certify Official Documentation,£46.25,£55.50
+KARYOTYPINGKENT,Copy Karyotyping (Gene Analysis) Cytoscreen Solutions,£278.10,£333.72
+CW,Cotton Wool (per 500g roll),£8.96,£10.75
+COURIER,Courier Fee,£0.00,£0.00
+CPD,CPD Provision,£0.00,£0.00
+BLOODCK,Creatine Kinase (CK) Blood Test (Rainbow Lab),£14.00,£16.80
+CREATININE,Creatinine Test (Rainbow Lab),£12.00,£14.40
+CREDIT,Credit,£0.00,£0.00
+CUTIMEDGEL,Cutimed/Intrasite Wound Hydrogel (per 25g tube),£7.58,£9.10
+CYCLOSPRAY,Cyclospray 211ml Canister,£12.25,£14.70
+CYKLOKAPRON,Cyklokapron Tranexamic Acid 100mg/ml (per 50ml dose of 10 vials),£50.00,£60.00
+CYSTOSCOPY,Cystoscopic Examination (Bladder Endoscopy),£159.65,£191.58
+INHOUSECYTOLOGY,Cytology (Cell Analysis),£33.48,£40.17
+TWBALCYTOLOGY,Cytology (Cell Analysis) from Tracheal Wash / BAL (Rainbow Lab),£30.50,£36.60
+TAPCYTOLOGY,Cytology of Body Fluid Aspiration (Rainbow Lab),£35.00,£42.00
+CYTOTEC,Cytotec PGE1 (Misoprostol) (per tablet),£0.82,£0.98
+DANILONBOX,Danilon Equidos Gold (per box of 60 sachets),£101.62,£121.94
+DANILONSACHET,Danilon Equidos Gold (per sachet),£2.38,£2.86
+DANTROLENE,Dantrolene 100mg/ml Oral Paste (per 30ml syringe),£52.50,£63.00
+DAXOCOX30,Daxocox 30mg tablets (per box of 4 tablets),£21.93,£26.32
+DAXOCOX45,Daxocox 45mg tablets (per box of 4 tablets),£21.93,£26.32
+DAXOCOX70,Daxocox 70mg tablets (per box of 4 tablets),£29.22,£35.06
+DEBTRECOVERY,Debt Recovery Referral to DSL UK,£40.00,£48.00
+DECTOMAX,Dectomax (1% Doramectin) Injectable (per ml),£1.14,£1.37
+DECTOMAXBOTTLE50,Dectomax Injectable (per 50ml bottle),£41.46,£49.75
+DEOSECTPERML,Deosect Topical Parasiticide (per ml),£0.14,£0.17
+DEPOMEDRONE,Depo Medrone Injectable (per ml),£23.28,£27.93
+DEPOCILLIN100,Depocillin (Procaine Penicillin 300mg/ml) Inj (per 100ml bottle),£16.64,£19.97
+DEPOCILLIN,Depocillin (Procaine Penicillin 300mg/ml) Injectable (per ml),£0.28,£0.34
+RINGWORMPCR,Dermatophyte (Ringworm) PCR (Rainbow Lab),£38.00,£45.60
+DERMOVATE30,Dermovate Cream (per 30g tube),£12.24,£14.69
+DES,Deslorelin 2.25mg/ml IM Injection (per ml),£49.75,£59.70
+SUPRELORIN9,Deslorelin acetate (GnRH) (per 9.4mg injection),£178.01,£213.61
+MEDESEDAN,Detomidine 10mg/ml Inj (per ml),£27.00,£32.40
+DOMOSEDAN,Detomidine 10mg/ml Inj (per ml),£143.00,£171.60
+DEXTABS,Dexamethasone Oral (per 2mg tablet),£3.40,£4.08
+DEXPOWDER,Dexamethasone Powder (per box of 14 x 50mg sachets),£104.40,£125.28
+DIAZEPAM,Diazepam 5mg/ml Injectable (per 2ml vial),£16.12,£19.34
+THERMOMETER,Digital Fast Flexible Waterproof Thermometer,£7.49,£8.99
+DIMAZON,Dimazon (50mg/ml furosemide) (per 10ml vial),£21.08,£25.30
+VRAPERDISCOUNT,Discount Reproductive Visit Thornton Lodge Farm (40 miles),£32.96,£39.55
+VNICHOLLSRACINGDISCOUNT,Discount Visit Adrian Nicholls Racing (45 miles),£36.00,£43.20
+VASHBROOKESTUDDISCOUNT,Discount Visit Ashbrooke Stud (150 miles),£80.00,£96.00
+VSCAVEDISCOUNT,Discount Visit Four Acre (51 miles),£40.80,£48.96
+VBARKERDISCOUNT,Discount Visit Pasture House Farm (Paul Barker) (62 miles round trip),£40.80,£48.96
+VBEDFORDDISCOUNT,Discount Visit Thorpe Hill Farm (60 miles),£48.00,£57.60
+VWYTCHWOODDISCOUNT,Discount Visit Wytchwood (40 miles),£32.00,£38.40
+DISCOUNTMILEAGE,Discounted Call-Out Fee (£0.80 per mile travelled) for Routine Reproductive Work (Mon-Fri),£0.80,£0.96
+VKEMPDISCOUNT,Discounted Call-Out Fir Tree Farm for Routine Breeding Work (40 miles),£32.00,£38.40
+VCHAPMANDISCOUNT,Discounted Call-Out Karen Chapman (Thorpe),£38.40,£46.08
+DISPENSE,Dispensing Fee,£5.71,£6.85
+DMSO,DMSO solution (per ml),£0.23,£0.28
+DOGSEMENSTORAGE24,Dog Frozen Semen Storage (monthly fee per dog 13-24 straws),£11.67,£14.00
+DOGSEMENSTORAGE36,Dog Frozen Semen Storage (monthly fee per dog 25-36 straws),£17.50,£21.00
+DOGSEMENSTORAGE12,Dog Frozen Semen Storage (monthly fee per dog up to 12 straws),£5.83,£7.00
+SEMENCOLLECTFREEZEBUNDLE,Dog Semen Collection & Freeze,£0.00,£0.00
+DOGVACCDHPL,Dog Vaccination (All 4 Combined),£43.86,£52.63
+DOGVACCKC,Dog Vaccination Kennel Cough,£27.31,£32.77
+DOGVACCL4,Dog Vaccination Lepto 4,£33.56,£40.27
+DOMOSEDANGEL,Domosedan Oral Sedative Gel (7.6mg/ml detomidine HCl) per 3ml tube,£52.66,£63.19
+DOMPERIDONE,Domperidone 10mg (Box of 100 Tablets),£14.37,£17.24
+DOPRAMV,Dopram V Injection (per ml),£1.67,£2.00
+DOSINGSYRINGE,Dosing Syringe (50ml),£0.60,£0.72
+SWABDG,Double Guarded Swab (per swab),£0.96,£1.15
+DOXXSOL1KG,Doxx-Sol (Doxycycline Hyclate 500mg/g) Oral Powder (per 1 Kg bag),£177.25,£212.70
+DOXXSOL100G,Doxx-Sol (Doxycycline Hyclate) Oral Powder (per 100g container),£47.73,£57.28
+BOVADOXYPOWDER100,Doxycycline 100% Oral Powder (per 100g tub),£74.10,£88.92
+BOVADOXYPOWDER50,Doxycycline 100% Oral Powder (per 50g tub),£47.85,£57.42
+DOXYTUBES,Doxycycline 200mg/ml Oral Paste (per 25ml syringe),£10.44,£12.53
+DOXYCAPS100,Doxycycline Oral (per 100mg capsule),£0.34,£0.41
+DOXYTAB50,Doxycycline Oral (per 50mg tablet),£0.34,£0.41
+MARKINGS,Draw Horse Markings and Certify Official Documentation for Passport,£67.00,£80.40
+DRYSHIPPERHIREUK,Dry Shipper Hire UK (up to 1 week) - Includes Full Tank Charging with Fresh Liquid Nitrogen,£128.75,£154.50
+DRYSHIPPERHIREWORLDWIDE,Dry Shipper Hire Worldwide - Includes Full Tank Charging with Fresh Liquid Nitrogen,£231.75,£278.10
+EASOTIC,Easotic Ear Drops (per 10ml bottle),£19.92,£23.90
+ECGREPORT,ECG Interpretation & Written Report (Rainbow Equine Hospital),£103.45,£124.14
+COGGINS,EIA COGGINS AGIDT Test (APHA) (Incl postage & packaging),£25.66,£30.79
+EIAELISA,EIA Serology cELISA (Rainbow Lab),£16.00,£19.20
+COGGINSFASTTRACK,EIA Serology COGGINS (APHA) *FAST-TRACKED*,£96.10,£115.32
+EKYFLOGYL,Ekyflogyl Topical Gel 125ml,£40.00,£48.00
+EMBRYOFLUSH,Embryo Flush & Search (includes all fluids and consumables),£275.00,£330.00
+EMBRYOTRANSFER,Embryo Processing & Transfer into Recipient Mare,£165.00,£198.00
+EV1,Emergency Call-Out 1,£72.10,£86.52
+EV2,Emergency Call-Out 2,£87.55,£105.06
+EV3,Emergency Call-Out 3,£103.00,£123.60
+EV4,Emergency Call-Out 4,£123.60,£148.32
+ENGEMYCINPERML,Engemycin 10% (Oxytetracycline) Injectable (per ml),£2.58,£3.10
+ENGEMYCINBOTTLE100,Engemycin 10% Injectable (Oxytetracycline) (per 100ml bottle),£24.93,£29.92
+ENROTRON,Enrotron (Enrofloxacin 100mg/ml) Oral Solution (per 1L bottle),£172.60,£207.12
+ENROX150,Enrox (Enrofloxacin) (per 150mg tablet),£3.13,£3.75
+EPIDIDDOG,Epididymal Sperm Recovery from Dog Testes (Incl all extender and consumables),£145.00,£174.00
+EPIDIDSTALLION,Epididymal Sperm Recovery from Stallion Testes (Incl all extender and consumables),£283.25,£339.90
+EQUESTP,Equest Pramox Oral Wormer,£25.47,£30.56
+EQUIBACTIN,Equibactin sachets (box of 10 sachets),£53.46,£64.15
+EQUILISTEBOX,Equilis Te (per box of 10 doses) NET NET PRICE,£88.33,£106.00
+TETVACBOOSTER,Equilis Te (Tetanus Vaccine),£22.70,£27.24
+CONSULTHORSE,Equine Consultation,£49.50,£59.40
+CONSULTPROLONGED,Equine Consultation Prolonged,£75.00,£90.00
+CONSULTFOLLOWUP,Equine Follow-Up Consultation,£36.00,£43.20
+FOSTERINGPERHOUR,Equine Fostering Pprocedure (per hour),£109.44,£131.33
+FOSTERING,Equine Fostering Procedure (per hour),£180.00,£216.00
+EHVPCR,"Equine Herpes Virus 1,4 (EHV) qPCR (Rainbow Lab)",£40.00,£48.00
+BLOODEHV,"Equine Herpes Virus 1,4 (EHV) Serology (Rainbow Lab)",£37.50,£45.00
+EMSPANELRAINBOW,"Equine Metabolic Syndrome (EMS) Panel - Insulin, Adiponectin, Glucose, Triglycerides (Rainbow Lab)",£53.00,£63.60
+HORSEPROGESTERONE,Equine Progesterone Blood Test,£42.23,£50.68
+EQUINEREMOTECONSULT,Equine Remote Consultation & Prescribing,£25.75,£30.90
+EQUINEREMOTECONSULTOOH,Equine Remote Consultation & Prescribing (Out of Hours),£36.05,£43.26
+MARESPECULUM,Equine Vaginal Speculum (single use),£4.08,£4.90
+EHV,"Equip EHV 1,4 Vaccination",£46.68,£56.01
+ROTA,Equip Rotavirus Vaccination,£69.21,£83.05
+EQUIPALAZONEINJ50,Equipalazone (Phenylbutazone 200mg/ml) Injectable (per 50ml bottle),£49.75,£59.70
+EQUIPALAZONEINJ,Equipalazone (Phenylbutazone 200mg/ml) Injectable (per ml),£1.42,£1.70
+EQUIPALAZONESACHET,Equipalazone (Phenylbutazone) Oral (Per 1g Sachet),£1.10,£1.32
+EQUIPALAZONE100,Equipalazone (Phenylbutazone/Bute) Oral (Box of 100 Sachets),£101.99,£122.39
+EQUIPALAZONEPASTE,Equipalazone Bute Paste (per 36g syringe),£33.57,£40.28
+EQUIPRED100,Equipred 50mg Prednisolone Tablets (per box of 100),£85.14,£102.17
+EQUIPREDTABLET,Equipred 50mg Prednisolone Tablets (per tablet),£0.86,£1.03
+EQUITOPMYOPLAST,Equitop Myoplast Protein Supplement (per 1.5kg tub),£78.09,£78.09
+ERTUGLIFLOZINPASTE,Ertugliflozin 5mg/ml Oral Paste (per 100ml tub),£154.06,£184.87
+ESOMEPRAZOLETUBE,Esomeprazole 100mg/ml Oral Paste (per 12ml tube),£24.87,£29.84
+ESOMEPRAZOLECAPS,Esomeprazole 40mg Oral Capsules (per box of 28),£11.45,£13.74
+PG,Estrumate (Cloprostenol) (PG) 250ug/ml (per ml),£4.62,£5.54
+EXPORT,"EU Export Certification (Incl Pre-Export Documentation, Clinical Exam & Final Export Cert",£139.05,£166.86
+EURICANHERPES,Eurican Herpes (CHV) Vaccine,£49.43,£59.31
+EUTHANIMAL,Euthanimal (400mg/ml Pentobarbitol) Inj per ml,£0.74,£0.89
+EUTHDOGCAT,Euthanise Dog/Cat,£68.75,£82.50
+EUTHFARM,Euthanise Farm Animal,£42.92,£51.50
+EUTHHORSE,Euthanise Horse,£87.34,£104.81
+EUTHASOL,Euthasol (400mg/ml Pentobarbitol) Inj per ml,£0.74,£0.89
+EVAELISA,EVA Serology ELISA (Rainbow Lab),£16.00,£19.20
+EXAGUS1KG,Exagus/Pectigus Advance 1kg,£55.00,£55.00
+EXAGUS3KG,Exagus/Pectigus Advance 3kg,£124.00,£124.00
+EXAMCERT,Examine & Certify Horse,£62.00,£74.40
+EXAMEYE,Examine Eye,£50.47,£60.56
+EXAMPLACENTA,Examine Placenta and Amnion,£36.00,£43.20
+EXAMMARE,Examine Post-Foaling Mare (including internal manual palpation),£65.41,£78.49
+EXCISEHYMEN,Excise Hymenal Tissue Remnant,£60.26,£72.31
+TOOTH,Extract Tooth (per extraction),£60.77,£72.92
+WOLF,Extract Wolf Tooth (per extraction),£27.30,£32.75
+6002696,EzyVet test,£1.00,£1.20
+CLOSTPERF,Faecal Test for Clostridia perfringens toxin,£38.11,£45.73
+WORMDISCOUNT,Faecal WEC,£10.80,£12.96
+WORM,Faecal Worm Egg Count (Rainbow Lab),£13.50,£16.20
+CONSULTCAT,Feline Consultation,£41.20,£49.44
+FENFLOR,Fenflor 300mg/ml Injection,£54.20,£65.04
+AMPUTATE,Fetotomy Wire Limb Amputation (post-mortem),£81.89,£98.26
+BLOODFIBRINOGEN,Fibrinogen Blood Test (Rainbow Lab),£12.00,£14.40
+FINADYNE100,Finadyne (Flunixin Meglumine 50mg/ml) Inj (per 100ml bottle),£67.73,£81.28
+FINADYNEINJ,Finadyne (Flunixin Meglumine 50mg/ml) Inj per ml,£1.40,£1.68
+FINADYNEPASTEBOX,Finadyne Oral Paste (per box of 6 syringes),£100.72,£120.86
+FINADYNEPASTE,Finadyne Oral Paste (per syringe),£23.00,£27.60
+FINASTERIDE5,Finasteride 5mg Oral (per tablet),£0.72,£0.86
+FNA,Fine Needle Aspirate Mass/Cyst,£23.18,£27.81
+FINILAC15,Finilac (50ug/ml Cabergoline) Oral Solution (per 15ml bottle),£66.46,£79.75
+VETTING5STAGE,Five Stage Pre Purchase Vetting Examination (includes 6 months VDS blood storage),£325.00,£390.00
+FLAMAZINE500,Flamazine Cream (per 500g tub),£44.79,£53.75
+FLAMAZINETUBE,Flamazine Cream (per 50g tube),£13.98,£16.78
+FLIXOTIDE250,Flixotide 250mcg Evohaler (120 dose) Inhaler,£71.48,£85.77
+FLU,Flu Vaccination (Proteq Flu),£32.29,£38.75
+FT,Flu-Tet Vaccination (Proteq Flu-Te),£35.64,£42.77
+AXIOMCYSTF,Fluid Cytology from Mass/Cyst (Axiom Laboratories),£62.18,£74.61
+FLUORESCEINMIN,Fluorescein Eye Drops (per single dose),£2.16,£2.59
+FLUORESCEINBUNDLE,Fluorescein Eye Test Bundle,£0.00,£0.00
+TEARDUCT,Flush Tear Duct,£55.00,£66.00
+IGG,Foal IgG (Rainbow Lab),£18.00,£21.60
+FOALCONFORMSCHEME,Foal Limb Conformation Assessment,£0.00,£0.00
+FOALCONFORM,Foal Limb Conformation Assessment,£28.33,£33.99
+FOALING1,Foaling - Assisted Delivery,£118.45,£142.14
+FOALING2,Foaling - Dystocia Resolution and Assisted Delivery,£242.05,£290.46
+FOALING3,Foaling - Severe Dystocia Resolution and Assisted Delivery,£355.35,£426.42
+VLEAKEFOC,FOC Call-Out Leake Stud,£0.00,£0.00
+FOETALSEXING,Foetal Sex Determination,£108.15,£129.78
+FOLEY14FR,Foley Catheter 30cm 14 French,£3.29,£3.95
+SPECIALISTCONSULTFOLLOWUP,Follow-Up Specialist Reproductive Consultation,£128.75,£154.50
+AXIOMFREET4,Free T4 (Gold Standard Dialysis) (Axiom Lab),£57.21,£68.65
+FRONTLINE250,Frontline Spray (per 250ml bottle),£35.63,£42.76
+FROZENPACKAGEFIRST,Frozen first cycle package,£515.00,£618.00
+FROZENSEMENDISTRIBUTION,"Frozen Semen Distrib (incl straw processing & transfer, flask nitrogen top-up, sealing, packaging)",£92.70,£111.24
+FROZENHANDLING,Frozen Semen Handling Fee,£61.80,£74.16
+FROZENSTORAGE20,Frozen Semen Storage per stallion (10 to 20 doses) (per month),£15.50,£18.60
+FROZENSTORAGE50,Frozen Semen Storage per stallion (21-50 doses) (per month),£18.50,£22.20
+FROZENSTORAGE10,Frozen Semen Storage per stallion (5 to 10 doses) (per month),£9.50,£11.40
+FROZENSTORAGE150,Frozen Semen Storage per stallion (51-150 doses) (per month),£25.75,£30.90
+FROZENSTORAGE5,Frozen Semen Storage per stallion (up to 5 doses) (per month),£6.75,£8.10
+FUCIBET,Fucibet Cream (per 30g tube),£13.25,£15.90
+XRAYSALES36,Full Set of Sales Radiographs (36 views) (incl upload to cloud/repository),£493.50,£592.20
+FUNGALCULT,Fungal Microscopy and Culture (Rainbow Lab),£36.00,£43.20
+GALASTOPP15,Galastop (50ug/ml Cabergoline) Oral Solution (per 15ml bottle),£71.32,£85.58
+GASTROSCOPY,Gastroscopy (Endoscopic Examination of Oesophagus & Stomach),£154.50,£185.40
+GAUZE10,Gauze Swabs (10cm x 10cm 8 Ply) (per pack),£5.54,£6.65
+GAUZE7,Gauze Swabs (7.5cm x 7.5cm 8 Ply) (per pack),£4.32,£5.18
+GENT,Gentamycin 10% Injectable (per ml),£1.62,£1.94
+GLANDERS,Glanders CFT Test (APHA),£42.13,£50.55
+GLENWOODCHILLEDFIRST,Glenwood Stud Chilled AI Package FIRST CYCLE,£395.00,£474.00
+GLENWOODCHILLEDSUBSEQ,Glenwood Stud Chilled AI Package SUBSEQUENT CYCLES,£312.50,£375.00
+GLENWOODFROZENFIRST,Glenwood Stud Frozen AI Package FIRST CYCLE,£515.00,£618.00
+GLENWOODFROZENSUBSEQ,Glenwood Stud Frozen AI Package SUBSEQUENT CYCLES,£437.50,£525.00
+GLUCOSEINJ,Glucose Injection 10g/20ml (per ampoule),£2.99,£3.59
+BLOODGCTLAB,Granulosa Cell Tumour Panel (Rainbow Lab),£96.00,£115.20
+GPWASH,Guttural Pouch Wash (includes sterile fluid and consumables),£54.00,£64.80
+HAEMATOLOGYRAINBOW,Haematology (Blood Cell Profile) (Rainbow Lab),£28.00,£33.60
+HARTMANNSLRING,Hartmann's Lactated Ringer Solution (per 500ml bottle),£8.90,£10.68
+HEMO15,Hemo-15 (per 100ml bottle),£54.25,£65.10
+COLONAID3.2,Hestevard Colonaid (per 3.2Kg tub),£90.00,£90.00
+DURAENAT,Hestevard Dura-E  Natural 1L,£121.00,£121.00
+HEPALYTE1,Hestevard Hepalyte Liquid 1L,£91.50,£91.50
+PROFIXBIND,Hestevard Profix +BIND (per box of 20 sachets),£42.00,£42.00
+PROFIXPASTE30,Hestevard Profix Advanced Paste (per 30ml syringe),£19.50,£19.50
+SMECTIZORBBIG,Hestevard Smectizorb (BioSponge) (per 2.5kg tub),£42.50,£42.50
+SMECTIZORB500,Hestevard Smectizorb (BioSponge) (per 500g course),£16.50,£16.50
+HILLSCANINEMETMOT,Hills Canine Metabolic & Mobility (per 4kg bag),£33.70,£40.44
+ECGHIRE,Hire of ECG System (Rainbow Equine Hospital),£121.69,£146.03
+TEASERBITCHHIRE,Hire of In-Season Teaser Bitch,£41.67,£50.00
+HISTO,Histopathology (Rossdales Lab),£60.05,£72.06
+FOALIDCHIP,"Horse/Foal ID Markings, Microchip, +/-DNA, Certification & Postage",£90.00,£108.00
+HY50,HY-50 (Sodium Hyaluronate) Injection (per 3ml syringe),£122.77,£147.33
+HYDROCORTISONE15,Hydrocortisone 1% Topical Cream (per 15g tube),£6.56,£7.88
+HYDROCORTISONE50,Hydrocortisone 1% Topical Cream (per 50g tube),£14.30,£17.15
+HYPERMUNERE,Hypermune Plasma RE (per 1L bag),£437.00,£524.40
+HYSTEROSCOPICPGE,Hysteroscopic Application of PGE to Oviductal Papillae,£200.00,£240.00
+DIARRHOEAPROFILEIH,"IH Diarrhoea Profile (Clostridium diff, Clostridium perf, Rotavirus, Cryptosporidium)",£85.23,£102.28
+IMAVEROL,Imaverol (Enilconazole) Topical Liquid (per 100ml bottle),£47.98,£57.58
+IMPORTDUTY,Import Duty Costs,£322.01,£322.01
+IMPROVACGNRFVACC,Improvac GNRF Vaccine (per 2ml dose),£58.33,£70.00
+IMSLUBE5,IMS Thick Vet Lube 5L,£11.28,£13.54
+ANAESTHETISE,"Induction, Maintenance & Monitoring of Anaesthesia (per 30 mins)",£82.40,£98.88
+6002419,Inj Fee Test,£4.17,£5.00
+INJECTCUPS,Inject Endometrial Cups,£30.90,£37.08
+EN10171A,Injection Needle (5mm),£85.79,£102.95
+INJFEE,Injection Service Fee,£5.71,£6.85
+INRA96,Inra 96,£31.32,£37.58
+INSEM,Inseminate Mare Chilled/Fresh (incl routine semen assessment & certification),£55.00,£66.00
+INSEMSCHEME,Inseminate Mare Chilled/Frozen SCHEME  (incl routine semen assessment & certification),£0.00,£0.00
+PRIDIN,INSERT Progesterone-Releasing Intravaginal Device (PRID),£16.80,£20.16
+INSOLVACC,Insol Dermatophyton Vaccine (per ml),£149.00,£178.80
+INSULIN,Insulin Blood Lab Fee (Rainbow Lab),£26.50,£31.80
+INSURANCEADMIN,Insurance Claim Administration Charge for completion of insurance forms by a Veterinary Surgeon,£25.00,£30.00
+INSURANCECONTINUATION,Insurance Claim Administration Charge for completion of subsequent insurance forms by a Veterinary S,£0.00,£0.00
+INTRAEPICAINE,Intra-Epicaine (Mepivacaine 2%) Injectable (per 10ml vial) (Local Anaesthetic),£14.55,£17.46
+ORALEXAM,Intra-Oral Examination,£46.35,£55.62
+SUPPOSITORY,Intrarectal Administration Fee,£24.75,£29.70
+INTRAUTEADFEE,Intrauterine administration fee,£36.00,£43.20
+INFUSIONPEN,Intrauterine Antibiotic Infusion (Procaine Penicillin + Sterile Saline),£41.50,£49.80
+INFUSIONPENGENT,"Intrauterine Antibiotic Infusion (Procaine Penicillin, Gentamycin, Sterile Saline)",£49.50,£59.40
+UTEINFUSBUNDLE,Intrauterine Antimicrobial Infusion,£0.00,£0.00
+INFUSIONPEROXIDE,Intrauterine Antimicrobial Infusion (60ml H₂O₂ 1% with sterile Hartmann's Solution),£35.00,£42.00
+COCONUT,Intrauterine Coconut Oil Dioestrus Instillation,£34.76,£41.72
+KEROSENEINF,Intrauterine Instillation of 120ml Kerosene via Uterine Lavage Catheter,£31.42,£37.70
+INFUSIONSALINE,Intrauterine Sodium Chloride Luteolytic Infusion,£35.00,£42.00
+GIVINGSETSTANDARD,Intravenous Fluid Giving Set,£10.96,£13.15
+IVINJFEE,Intravenous Injection Service Fee,£10.50,£12.60
+IVRP,Intravenous Regional Perfusion (IVRP),£82.40,£98.88
+INVOKANA,Invokana (Canagliflozin) 300mg (per tablet),£3.34,£4.01
+BLOODIONISEDCALCIUM,Ionised Calcium Blood Test (Rainbow Lab),£21.00,£25.20
+IRRIPOD,Irripod Sterile Saline for wounds (per 20ml pod),£0.43,£0.52
+JOINTBLOCKKNEE,Joint Block - Carpus (Knee),£70.97,£85.16
+JOINTBLOCKFETLOCK,Joint Block - Fetlock,£57.42,£68.91
+JOINTBLOCKHOCK,Joint Block - Hock (TMT),£70.97,£85.16
+KARIDOX/POWDOX,Karidox/Powdox (100mg/ml doxycycline) Oral Solution (per 1 litre bottle),£67.06,£80.47
+KARYOTYPINGTEXAS,Karyotyping (Gene Analysis) Texas A&M,£351.85,£351.85
+KETABEL10,Ketabel Ketamine 100mg/ml Injectable (per 10ml vial),£23.97,£28.77
+KRUTEXSUPERSENSITIVE,Krutex Super Sensitive Arm Length Gloves (per box of 100),£18.35,£22.02
+EQUIVETFUNNEL,KRUUSE Equivet Funnel,£34.24,£41.09
+KRUUSEIGG,Kruuse IgG Snap Test (per kit),£6.91,£8.29
+LABTESTSURCHARGE,"Lab Test After Hours Surcharge (weekends, public holidays)",£27.30,£32.75
+LACTASETABS,Lactase 350mg Tablets/Capsules (9000 FCC),£0.26,£0.32
+LAMENESS1,Lameness Examination,£64.50,£77.40
+LAMENESSFOLLOWUP,Lameness Follow-Up / Re-examination,£49.00,£58.80
+LAMINITICPANELRAINBOW,"Laminitic Panel - ACTH, Insulin, Adiponectin, Glucose, Triglycerides (Rainbow L",£73.50,£88.20
+LANCEABSCESSHAEMATOMA,Lance and Drain Abscess / Haematoma,£56.25,£67.50
+LATEINTEREST8,Late Payment of Commercial Debts (Interest) Act 1998 Statutory 8%,£0.00,£0.00
+LATEPAYMENT40,Late Payment of Commercial Debts Act 1998 Statutory Admin Fee,£40.00,£48.00
+BITCHPREGFOETAL,Late Pregnancy US Scan and Foetal Viability Assessment,£175.00,£210.00
+GLOVES,Latex/Nitrile Gloves (per box of 100),£11.00,£13.20
+PEROXIDELAVAGE,Lavage Uterus with 1L 0.5% Peroxide,£48.00,£57.60
+ACETYLCYSTEINELAVAGE,Lavage Uterus with 1L Sterile LRS with 6g Acetylcysteine,£64.25,£77.10
+IODINELAVAGE,Lavage Uterus with 1L Sterile Povidone Iodine 1%,£48.00,£57.60
+DMSOLAVAGE,Lavage Uterus with 50ml DMSO in 1L Sterile Saline,£48.00,£57.60
+UTELAV,Lavage Uterus with Sterile Isotonic Fluids,£40.95,£49.14
+PCRLAWSONIA,Lawsonia Facecal PCR (Rainbow Lab),£42.00,£50.40
+LAWSVACC,Lawsonia Vaccination (per 100ml bottle of live vaccine),£104.67,£125.60
+BLOODLDH,LDH Blood Test (Rainbow Lab),£12.00,£14.40
+LEPTOCANICOLA,Leptospira canicola Micro-Agglutination Test (MAT) (APHA),£12.88,£15.45
+LEPTOICTEROHAEM,Leptospira icterohaemorrhagiae Micro-Agglutination Test (MAT) (APHA),£16.27,£19.53
+LIDOCAINE20VIAL,Lidocaine 2% Injection (Local Anaesthetic) (per 20ml vial),£7.17,£8.60
+LIVERPCR,Liver Virus Blood PCR (Parvovirus & Hepacivirus),£60.00,£72.00
+V1,Local Call-Out (V1) (up to 10 miles round trip),£21.50,£25.80
+V2,Local Call-Out (V2) (up to 20 miles round trip),£32.00,£38.40
+UTELOWVOLLAV,Low Volume Uterine Lavage for Culture & Cytology (incl sterile fluids & consumables),£40.95,£49.14
+LOXICOMORALDOG32,Loxicom Dog (1.5mg/ml Meloxicam) Oral Suspension (per 32ml bottle),£15.63,£18.75
+LOXICOMDOGDUALPACK,Loxicom Dog 1.5mg/ml Oral Suspension (2 x 100ml bottles),£54.50,£65.40
+LOXICOMDOG100,Loxicom Dog 1.5mg/ml Oral Suspension (per 100ml bottle),£29.25,£35.10
+LUTALYSE,Lutalyse (Dinoprost) Prostaglandin (per ml),£1.76,£2.11
+TRANSITIONALFOLLICLE,Luteinise Transitional Follicle,£49.75,£59.70
+MAGSULPHATE500,Magnesium Sulphate Medical Grade Oral Salt (Epsom Salts) (per 500g dose),£9.00,£10.80
+MALASEB,Malaseb Shampoo 250ml,£27.17,£32.60
+VAGINALEXAM,"Manual Examination of Vestibule, Vagina & Cervix",£30.90,£37.08
+RECTAL,Manual Rectal Examination,£43.75,£52.50
+MANUALCYSTREDUCTION,Manual Uterine Lymphatic Cyst Reduction,£65.00,£78.00
+DRIP,Manually Administer Intravenous Fluids (per litre),£22.50,£27.00
+MANUKA42,Manuka Honey (per 42g tube),£8.98,£10.78
+MARBOX,Marbofloxacin Injectable (per ml),£2.40,£2.88
+MILKREPLACER10KG,Mare Milk Replacer (per 10Kg bag),£71.35,£71.35
+MAXITROL,Maxitrol Eye Ointment,£8.32,£9.98
+MEDICATEBACK,Medicate Back,£115.88,£139.05
+MEDICATEFCOFFIN,Medicate Coffin Joint,£57.40,£68.88
+MEDICATESHIN,Medicate Dorsal Cannon (Shin Bone),£38.50,£46.20
+MEDICATEFETLOCK,Medicate Fetlock Joint,£57.50,£69.00
+MEDICATEHOCK,Medicate Hock Joint (TMT),£57.50,£69.00
+MEDICATEKNEE,Medicate Knee Joint,£57.42,£68.91
+MEDICATENAVICULAR,"Medicate Navicular Bursa (Includes Nerve Block, Xrays and Consumables)",£204.71,£245.66
+MEDICATENECK,Medicate Neck Facet Joints Under US Guidance,£267.79,£321.35
+MEDICATEPASTERN,Medicate Pastern Joint,£81.89,£98.26
+MEDICATESI,Medicate Sacro-Iliac Joints,£146.26,£175.51
+MEDICATEST,Medicate Soft Tissue (drugs and consumables included),£38.50,£46.20
+MEDICATESTIFLE,Medicate Stifle Joint,£70.81,£84.98
+TMJ,Medicate Temporomandibular Joint (TMJ),£71.07,£85.28
+MEDICATETENDONSHEATH,Medicate Tendon Sheath,£70.81,£84.98
+MELOLIN,Melolin 10cm x 10cm Sterile Dressing,£1.50,£1.80
+MEPIDOR,Mepidor (Mepivacaine 2%) Injectable (per 10ml vial) (Local Anaesthetic),£25.14,£30.17
+METACAMINJ,Metacam (Meloxicam 20mg/ml) Injectable (per ml),£0.63,£0.76
+METOCLOPRAMIDETABS,Metaclopramide 10mg Tablets (per tablet),£0.81,£0.97
+METRONIDAZOLE400,Metronidazole 400mg Oral (per tablet),£0.27,£0.32
+MICROCHIPDOG,Microchip Dog,£27.00,£32.40
+MICROCHIPHORSE,Microchip Horse/Foal (Homeagain Classic),£32.75,£39.30
+MICROCHIPHORSETHERMO,Microchip Horse/Foal (Homeagain Thermochip),£43.34,£52.01
+MICROSCOPESLIDE,Microscope slide (per slide),£0.10,£0.12
+MICROSCOPYRAINBOW,Microscopy (Rainbow Lab),£24.00,£28.80
+SPINALNEEDLEMILA,MILA 18G 20cm Echo-Tipped Spinal Needle,£32.50,£39.00
+MILBEMAXDOG,Milbemax Dog (5-25kg) (per 125mg tablet),£5.33,£6.39
+MILBEMAXDOGBOX4,Milbemax Dog (5-25kg) (per box of 4 x 125mg tablets),£21.30,£25.56
+MINORPROCEDURES,Minor Procedures (per 15 mins),£97.85,£117.42
+MONOCRYL20,Monocryl Suture Material USP 2-0 (per pack),£10.00,£12.00
+MUDFEVERCREAM250,"Mud Fever Cream (per 250g tub) (Betamethasone 2%, Nitrofurazone 0.2%, Neomycin 0.55%)",£52.50,£63.00
+MYCOPLASMACANISCULTURE,Mycoplasma canis Culture/PCR (APHA),£123.60,£148.32
+MYCOTOXINSAMPLING,"Mycotoxin Forage Sampling, Processing, Packaging, International Shipping & Interpretation",£38.21,£45.86
+MYORELAX,Myorelax Guaifenesin (GGE) 100mg/ml (per bottle),£133.66,£160.39
+TUBECHOKE,Nasogastric Lavage of Oesophageal Choke,£65.66,£78.80
+CONSULTNEONATE,Neonatal Foal Consultation,£49.50,£59.40
+CONSULTNEONATEPROLONGED,Neonatal Foal Consultation Prolonged,£75.00,£90.00
+NERVEABAX,Nerve Block - Abaxial Sesamoid,£56.65,£67.98
+NERVEDEEPBRANCH,Nerve Block - Deep Branch,£56.65,£67.98
+NERVEHIGH4,Nerve Block - High 4 Point,£60.00,£72.00
+NERVELOW4,Nerve Block - Low 4 Point,£60.00,£72.00
+NERVEPD,Nerve Block - Palmar Digital,£56.65,£67.98
+BLOCKTENDONSHEATH,Nerve Block Tendon Sheath,£70.81,£84.98
+NORODINEPASTE,Norodine (TMPS) Oral Paste (per 45g syringe),£7.00,£8.40
+EXPORTNI,Northern Ireland Export Certification,£371.21,£445.45
+NGSCHILLEDFIRST,Norton Grove Chilled AI Package FIRST CYCLE,£395.00,£474.00
+NGSCHILLEDSUBSEQ,Norton Grove Chilled AI Package SUBSEQUENT CYCLES,£345.00,£414.00
+NGSFROZENSUBSEQ,Norton Grove Frozen AI Package SUBSEQUENT CYCLES,£437.50,£525.00
+NGSFROZENFIRST,Norton Grove Stud Frozen AI Package FIRST CYCLE,£515.00,£618.00
+NUCHALTHREADWORM,"Nuchal Threadworm Test (incl biopsy processing, staining & microscopy)",£41.50,£49.80
+OESTRONESULPHATE,Oestrone Sulphate Blood Test (Rainbow Lab),£33.00,£39.60
+SALESOVDEC,Official Veterinarian Declaration (For Sales EU Export),£36.05,£43.26
+OVEXPORTCONSULT,Official Veterinarian Export Consultancy,£0.00,£0.00
+OMEPRAZOLEINJ,Omeprazole 100mg/ml Injectable (per 20ml vial),£199.17,£239.01
+OPENCASLICK,Open Caslick (drugs and consumables included),£30.50,£36.60
+SCHEMEOPENCASLICK,Open Caslick (including drugs and consumables) (Scheme),£0.00,£0.00
+OSTEOPEN,Osteopen Injectable (per 10ml vial),£78.50,£94.20
+OSTEOPENMULTI,Osteopen Injectable (per 10ml vial) 4 or more,£74.11,£88.93
+OOH1,Out Of Hours Call-Out Zone 1,£123.50,£148.20
+OOH2,Out Of Hours Call-Out Zone 2,£145.00,£174.00
+OOH3,Out Of Hours Call-Out Zone 3,£165.00,£198.00
+OOH4,Out Of Hours Call-Out Zone 4,£180.00,£216.00
+OOHCONSULTSMALLANIMAL,Out Of Hours Small Animal Consultation,£109.44,£131.33
+OOHLOCAL,Out Of Hours Visit Local,£82.50,£99.00
+DEBTINTEREST,Overdue Debt Interest Applied Monthly (8% Annual Rate),£0.00,£0.00
+HYDROTUBATION,Oviductal Hydrotubation (Fallopian Tube Flushing),£295.00,£354.00
+OXYTBOTTLE,Oxytocin 10IU/ml Injectable (per 25ml bottle),£26.50,£31.80
+OXYT,Oxytocin 10IU/ml Injectable (per ml),£1.56,£1.87
+LABINTERPRET,"Packaging, Delivery, Interpretation and Reporting of Laboratory Results",£5.70,£6.84
+PANACURSUSP,Panacur Dog/Cat 10% Suspension (per 100ml bottle),£30.03,£36.04
+PANACURGUARD225ML,Panacur Guard Equine Oral Suspension (per 225ml bottle),£35.45,£42.54
+PARACETAMOL,Paracetamol (per 500mg tablet),£0.05,£0.06
+PARAFFINLQ,Paraffin Liquid 4L,£36.19,£43.43
+PDSSUTURE,PDS Ethicon Suture Material,£12.00,£14.40
+BOVAPENTOXYPHYLLINE,Pentoxyphylline (425mg/ml) Oral Paste (per 500ml tub),£358.80,£430.56
+PEPTIZOLE28TUBES,Peptizole 28 Tubes Special Discount,£372.55,£447.06
+PEPTIZOLEBOX,Peptizole Oral Omeprazole Paste (per box of 7 tubes),£130.00,£156.00
+PEPTIZOLEBOXSPECIALDISCOUNT,Peptizole Oral Omeprazole Paste (per box of 7 tubes),£112.50,£135.00
+PEPTIZOLESINGLE,Peptizole Oral Omeprazole Paste (per syringe),£22.55,£27.06
+CASLICK,Perform Caslick's Surgery (drugs & suture material included),£48.67,£58.40
+SCHEMECASLICK,Perform Caslick's Surgery (Scheme),£0.00,£0.00
+ECGEXAM,Perform Electrocardiogram (ECG),£81.89,£98.26
+FLUORESCEINEYE,Perform Fluorescein Eye Test,£12.50,£15.00
+MADIGAN,Perform Madigan Procedure (up to 20 minutes),£63.09,£75.71
+SWABNP,Perform Nasopharyngeal Swab (includes consumables),£36.05,£43.26
+RETENTIONENEMA,Perform Retention Enema,£87.55,£105.06
+SKINBIOPSY,Perform Skin Biopsy,£120.00,£144.00
+PERGOQUIN,Pergolide 1mg (per tablet),£1.10,£1.32
+GADD,Perineal Body Reconstruction (Gadd Procedure),£437.75,£525.30
+STRIP,Periosteal Elevation Surgery (“Strip”) (per site),£81.37,£97.64
+INDSTOMTUBE,Place Indwelling Nasogastric tube,£101.46,£121.75
+MARBLE,Place Intrauterine Acrylic Sphere (Marble),£55.00,£66.00
+CATHETERISESHORT,"Place Short-Stay Catheter (includes prep, local anaesthetic, catheter and IV placement)",£36.00,£43.20
+PMFOETUS,"PM Foetus & Excise Liver, Lung, Spleen, Thymus, Adrenal & Placenta Samples",£84.46,£101.35
+VICRYLPOLYSORB0,Polysorb/Vicryl Suture Material USP 0 (per pack),£10.00,£12.00
+PM,Post Mortem Examination,£109.18,£131.02
+POSTSD,Postage & Packaging Special Delivery,£9.25,£9.25
+POST24,Postage and Packaging Tracked 24,£5.79,£5.79
+POST48,Postage and Packaging Tracked 48,£4.95,£4.95
+POTASSIUMIODIDE,Potassium Iodide Crystals Oral (per 1kg pot),£270.00,£324.00
+SCHEMEHEALTHTESTS,Pre Breeding Health Test Package for Mares on Breeding Scheme,£90.00,£108.00
+PRETCI,Pre-TCI examination and certification,£56.00,£67.20
+PREDFORTE10,Pred Forte Eye Drops (10ml bottle),£8.14,£9.77
+PREDFORTE5,Pred Forte Eye Drops (5ml bottle),£4.04,£4.85
+PREDPASTE,Prednisolone 100mg/ml Oral Paste (per 30ml syringe),£75.01,£90.01
+PREDTAB5,Prednisolone 5mg Tablet,£0.20,£0.24
+PREGBITCH,Pregnancy US Scan Bitch,£66.67,£80.00
+PREGSCAN,Pregnancy US Scan Mare,£48.50,£58.20
+SCHEMEPREGSCAN,Pregnancy US Scan Mare (Scheme),£0.00,£0.00
+XRAYBITCHPREG,Pregnancy X-Ray Bitch,£245.83,£295.00
+SEMENEXPORTPAPERS,Prepare Official Semen Export Paperwork (per dog),£43.78,£52.53
+PRESSAGEK3,Pressage Bandage Knee Size 3 (K3),£45.83,£55.00
+PREVICOX227,Previcox 227mg Tablets (per tablet),£1.27,£1.52
+PRIDDELTA,Prid Delta Intrauterine Device,£14.00,£16.80
+PROSTIN,Prostin Gel (PGE₂) (per 1mg tube),£55.00,£66.00
+PSEUDOEPHEDRINE,Pseudoephedrine 60mg (per tablet),£0.75,£0.90
+DEWCLAWPUP,Puppy Dew Claw Removal (Includes local anaesthetic & cautery),£13.65,£16.38
+PUPPYVACCDISCOUNT,Puppy Vaccination & Health Check  BREEDERS SPECIAL DISCOUNT,£19.29,£23.15
+PYRATAPE,Pyratape (Pyrantel) Wormer (per tube),£10.85,£13.02
+PYROFLAMINJ,Pyroflam Injection 50mg/ml (per ml),£13.73,£16.47
+QMMSWATERTESTING,QMMS Comprehensive Water Testing,£95.50,£114.60
+QMMSWATERKIT,QMMS Priority Water Kit,£18.00,£21.60
+XRAYNECK,Radiograph (XRAY) Cervical (Neck) Vertebrae,£319.30,£383.16
+XRAYDOG,Radiograph (XRAY) Dog Extremity,£312.50,£375.00
+XRAYRADIUS,Radiograph (XRAY) Radius,£196.47,£235.77
+XRAYBACK,Radiograph (XRAY) Spine/Back,£266.51,£319.82
+XRAYTIBIA,Radiograph (XRAY) Tibia,£196.47,£235.77
+XRAYCANNON,Radiograph Cannon Bone (4 views),£196.47,£235.77
+XRAYELBOW,Radiograph Elbow,£213.73,£256.47
+XRAYFETLOCK,Radiograph Fetlock,£216.30,£259.56
+XRAYFOOT,Radiograph Foot (LM & DP),£169.95,£203.94
+XRAYHEAD,Radiograph Head,£244.63,£293.55
+XRAYHOCK,Radiograph Hock,£235.00,£282.00
+XRAYKNEE,Radiograph Knee,£234.33,£281.20
+XRAYRADIALPHYSES,Radiograph Radial Physes (Knee Growth Plates),£169.95,£203.94
+XRAYREVIEW,Radiograph Set Interpretation,£51.50,£61.80
+XRAYSHOULDER,Radiograph Shoulder,£255.00,£306.00
+XRAYSTIFLE,Radiograph Stifle,£265.00,£318.00
+OSSIFICATIONXRAYS,Radiographs to Assess Cuboidal Bone Ossification,£174.59,£209.50
+RAPIDEXON50,Rapidexon Dexamethasone 0.2% Injectable (50ml Bottle),£28.75,£34.50
+RAPIDEXON,Rapidexon Dexamethasone 0.2% Injectable (per ml),£0.60,£0.72
+RE-EXSMALLANIMAL,Re-examine Small Animal,£36.05,£43.26
+REBILL,Rebilling,£0.00,£0.00
+RECEPTAL,Receptal (Buserelin 0.004mg/ml) Injectable (per 10ml vial),£28.55,£34.26
+RECIPSYNC,Recipient Mare Synchronisation,£225.00,£270.00
+REFUND,Refund for OPU Materials,£833.00,£833.00
+DIARRHOEAPROFILERAINBOW,"REH Diarrhoea Profile (Clostridium diff, Clostridium perf, Salmonella, Rotavirus, Crypto) (Rainbow L",£110.00,£132.00
+RELAQUINE,Relaquine 35mg/ml Oral Gel (per 10ml syringe),£19.50,£23.40
+REMOTECONSULT,Remote Specialist Consult (per case - incl review all history & follow-up),£60.00,£72.00
+MARBLEOUT,Remove Intrauterine Acrylic Sphere (Marble),£75.00,£90.00
+PRIDOUT,Remove Progesterone-Releasing Intravaginal Device (PRID),£0.00,£0.00
+REMOVESHOE,Remove Shoe,£15.45,£18.54
+REMOVESUTURES,Remove Sutures/Staples,£20.00,£24.00
+BLOODRENAL,Renal Profile Blood Test (Rainbow Lab),£70.00,£84.00
+RENOFOAM10,Renofoam Self-Adhesive Dressing,£4.79,£5.75
+PERINEALLAC1,Repair 1st Degree Perineal Laceration,£69.53,£83.43
+REPEATSEMENCOLLECTIONDOG,Repeat Semen Collection Dog (Same Day) (Incl Routine Semen Assessment),£83.33,£100.00
+RESCANABD,Repeat Ultrasound Scan Abdomen,£43.75,£52.50
+REPEATSCANCHEST,Repeat Ultrasound Scan Chest,£48.90,£58.68
+SCANUMBREPEAT,Repeat Ultrasound Scan Umbilical Structures (Navel),£43.26,£51.91
+RESPPCR,"Respiratory Profile (Rainbow Lab) Strangles, Flu, EHV1+4 PCR",£92.00,£110.40
+RESTOREELECTROLYTES,Restore 400g Oral Rehydration Electrolytes,£11.50,£13.80
+RFM1,Retained Foetal Membranes Manual Removal,£100.00,£120.00
+RFM2,Retained Foetal Membranes Manual Removal (Prolonged),£150.00,£180.00
+RHEUMOCAMEQUINE250,Rheumocam (Meloxicam 15mg/ml) Oral Suspension (per 250ml bottle),£68.00,£81.60
+BLOODREQUI,Rhodococcus Equi Serology (Rainbow Lab),£45.00,£54.00
+RIFAMPINTABS,Rifampin Oral Capsules (per 300mg capsule),£2.00,£2.40
+RIFAMPIN250,Rifampin Oral Paste (per 250ml pot),£214.50,£257.40
+VCLIFF,Routine Call-Out Cliff Stud,£41.25,£49.50
+VCONSORT,Routine Call-Out Consort Equine Therapies,£34.00,£40.80
+VETCHINGHAM,Routine Call-Out Etchingham Stud,£25.00,£30.00
+VKEMP,Routine Call-Out Fir Tree Farm (40 miles),£40.00,£48.00
+VGARROWBY,Routine Call-Out Garrowby Stud (32 miles),£26.50,£31.80
+VCAMACHO,Routine Call-Out JAC Racing / Star Cottage Stables,£10.30,£12.36
+VCHAPMAN,Routine Call-Out Karen Chapman (Thorpe),£48.00,£57.60
+DENTALROUTINE,Routine Dental Examination and Rasp,£43.78,£52.53
+VGLENWOOD,Routine Scheduled Call-Out Glenwood Stud,£46.50,£55.80
+VGLENWOODSATSUN,Routine Scheduled Sat/Sun Call-Out Glenwood Stud,£55.00,£66.00
+VALBAROSA,Routine Scheduled Visit Albarosa Stud,£55.00,£66.00
+VBCS,Routine Scheduled Visit Branton Court Stud,£56.50,£67.80
+ROUTINECONSULT,Routine Small Animal Consultation,£43.78,£52.53
+VNICHOLLSRACING,Routine Visit Adrian Nicholls Racing (45 miles),£45.00,£54.00
+VASHBROOKESTUD,Routine Visit Ashbrooke Stud (150 miles),£150.00,£180.00
+VELLISON,Routine Visit Brian Ellison Racing,£10.50,£12.60
+VBURSEA,Routine Visit Bursea Lodge Stud (62 miles),£44.50,£53.40
+VCOWARD,Routine Visit Coward Racing (24 miles),£24.75,£29.70
+VDEC,Routine Visit Declan Carroll Racing,£10.50,£12.60
+VSCAVE,Routine Visit Four Acre (51 miles),£51.00,£61.20
+VLASKILL,Routine Visit Laskill (44 miles),£45.00,£54.00
+VLES,Routine Visit Les Eyre Racing (70 miles),£76.43,£91.71
+VNGS,Routine Visit Norton Grove Stud,£10.50,£12.60
+VRAPER,Routine Visit Thornton Lodge Farm (40 miles),£40.50,£48.60
+VBEDFORD,Routine Visit Thorpe Hill Farm (60 miles),£60.00,£72.00
+VWYTCHWOOD,Routine Visit Wytchwood (40 miles),£40.00,£48.00
+SALMONELLAPCR,Salmonella Faecal PCR (Rainbow Lab),£34.00,£40.80
+TAPTENDONSHEATH,"Sample Tendon Sheath Fluid (incl prep, sterile gloves, consumables + procedure)",£70.81,£84.98
+SCALPEL15,Scalpels No. 15 (per scalpel),£0.48,£0.58
+VLEAKE,Scheduled Call-Out Leake Stud,£50.00,£60.00
+VORCHARD,Scheduled Call-Out Orchard Livery,£38.00,£45.60
+SCHEMEFOAL,"Scheme Newborn Foal Exam, Tetanus Antitoxin Inj, Blood Sample, IgG Antibody Test",£0.00,£0.00
+WEATHERBYSSCHEME,"Scheme TB Foal Weatherby’s ID, Blood for DNA, Microchip & Postage",£0.00,£0.00
+SEDALIN,Sedalin (per 10ml tube),£27.61,£33.13
+SEDBUNDLEDOG,Sedate Dog Bundle (drugs & consumables included),£0.00,£0.00
+SED1,Sedate Horse (0.1ml Detomidine + 0.1ml Butorphanol),£0.00,£0.00
+SED2,Sedate Horse (0.2ml Detomidine + 0.2ml Butorphanol),£0.00,£0.00
+SED3,Sedate Horse (0.3ml Detomidine + 0.3ml Butorphanol),£0.00,£0.00
+SED4,Sedate Horse (0.4ml Detomidine + 0.4ml Butorphanol),£0.00,£0.00
+SED5,Sedate Horse (0.5ml Detomidine + 0.5ml Butorphanol),£0.00,£0.00
+SED6,Sedate Horse (0.6ml Detomidine + 0.6ml Butorphanol),£0.00,£0.00
+SED7,Sedate Horse (0.7ml Detomidine + 0.7ml Butorphanol),£0.00,£0.00
+SED8,Sedate Horse (0.8ml Detomidine + 0.8ml Butorphanol),£0.00,£0.00
+SED9,Sedate Horse (0.9ml Detomidine + 0.9ml Butorphanol),£0.00,£0.00
+SED10,Sedate Horse (1.0ml Detomidine + 1.0ml Butorphanol),£0.00,£0.00
+SED11,Sedate Horse (1.1ml Detomidine + 1.1ml Butorphanol),£0.00,£0.00
+SED12,Sedate Horse (1.2ml Detomidine + 1.2ml Butorphanol),£0.00,£0.00
+SED13,Sedate Horse (1.3ml Detomidine + 1.3ml Butorphanol),£0.00,£0.00
+SED14,Sedate Horse (1.4ml Detomidine + 1.4ml Butorphanol),£0.00,£0.00
+SED15,Sedate Horse (1.5ml Detomidine + 1.5ml Butorphanol),£0.00,£0.00
+SEDATECLIPPING,"Sedate Horse for Clipping (incl drugs, consumables, monitoring & top-ups)",£21.84,£26.20
+SEDATEDENTIST,"Sedate Horse for Dentist (incl drugs, consumables, monitoring & top-ups)",£21.84,£26.20
+SEDATEFARRIER,"Sedate Horse for Farrier (incl drugs, consumables, monitoring & top-ups)",£21.84,£26.20
+SEDATESURGERY,"Sedate Horse for Surgery (incl drugs, consumables, monitoring & top-ups)",£21.84,£26.20
+SEDATETRAVEL,"Sedate Horse for Travel (incl drugs, consumables, monitoring & top-ups)",£0.00,£0.00
+SEDBUNDLE,Sedate Horse/Foal (drugs & consumables included),£21.84,£26.20
+SEDFEEEQ,Sedation fee equine,£25.75,£30.90
+SEDFEESA,Sedation fee small animal,£64.38,£77.25
+SEDEDORM,Sededorm Medetomidine HCl 1mg/ml (per ml),£14.28,£17.13
+SEDIVET,Sedivet (Romifidine 1%) Injection (per ml),£5.63,£6.75
+SEMENALKPHOS,Semen Alkaline Phosphatase Test,£17.49,£20.99
+FREEZESEMEN,"Semen Analysis, Processing & Freezing (Excludes Collection)",£275.00,£330.00
+CENTRIFUGECYTOLOGY,Semen Centrifuge and Cytology,£41.25,£49.50
+SEMENFREEZELARGE,Semen Collect & Freeze (incl clinical examination & semen analysis pre+post-thaw),£338.75,£406.50
+SEMENCOLLECTIONSUBSEQ,Semen Collection Dog (per additional 15 minutes),£54.79,£65.75
+SEMENCOLLECTIONDOG,Semen Collection Dog (Up to 15 mins) (Incl Routine Semen Assessment),£115.00,£138.00
+SEMENCOLLECTTCIBUNDLE,Semen Collection Dog For Chilled/Fresh TCI (Up to 15 mins) (Incl Routine Semen Assessment),£0.00,£0.00
+BLOODSAA,Serum Amyloid A (SAA) Blood Test (Rainbow Lab),£14.00,£16.80
+LH,Serum Luteinising Hormone (LH) Assay,£64.38,£77.25
+TCICATHETER,Single Use Minitube Transcervical Catheter & Guidewire,£25.80,£30.96
+SMALLANIMALCONSULT,Small Animal Consultation,£34.33,£41.20
+SMALLANIMALOOH,"Small Animal Out Of Hours Surcharge (Sat, Sun, Public Holiday)",£162.23,£194.67
+CLAIMFEE,Small Claims Court Statutory Claim Fee,£41.67,£50.00
+SOFBAN,Sofban Orthopaedic Padding 10cm x 2.7m (per roll),£1.80,£2.16
+SOFTPALATE,Soft Palate Thermocautery (Standing Surgery),£507.50,£609.00
+SOMULOSE,Somulose Injectable (per ml),£3.00,£3.60
+SOTALOL80,Sotalol 80mg tablets (per pack of 28),£2.05,£2.46
+SPASMIUMCOMP,Spasmium (Buscopan) Compositum (per 100ml bottle),£63.93,£76.71
+SV1,Special Call-Out 1 (up to 10 miles),£43.78,£52.54
+SV2,Special Call-Out 2,£64.38,£77.26
+SVELLISON,Special Visit Brian Ellison Racing,£21.00,£25.20
+SVDEC,Special Visit Declan Carroll Racing,£21.00,£25.20
+SPECIALMILEAGE,Special Visit Fee (£2 per mile travelled),£2.00,£2.40
+SVGARROWBY,Special Visit Garrowby Stud (within normal working hours),£53.00,£63.60
+SVHIGHFIELD,Special Visit Highfield Yard,£20.60,£24.72
+SVLES,Special Visit Les Eyre Racing (70 miles),£152.85,£183.42
+SVNGS,Special Visit Norton Grove Stud,£21.00,£25.20
+SPECIALISTCONSULT,Specialist Reproductive Consultation,£190.55,£228.66
+SPERMLONGEVITY,Sperm Longevity Assessment with Chilled Extender (up to 7 days),£133.33,£160.00
+MORPHOLOGY,Sperm Morphology Assessment,£77.50,£93.00
+SPUTOLOSIN,Sputolosin (Dembrexine 5mg/g) Oral Powder (per 420g tub),£71.06,£85.27
+LIVERY,Stable Livery (per day),£30.90,£37.08
+CEMCULTURESTALLION,Stallion Penile CEM Culture from 3 or 4 Sites (Rainbow Lab),£65.00,£78.00
+STALLIONFREEZE,Stallion Semen Freezing (per breeding dose),£12.88,£15.45
+STALLIONSDIRECTDISTRIB,Stallions Direct Frozen Semen Processing for Distribution,£120.00,£144.00
+STALLIONSDIRECTSTANDINGCHARGE,Stallions Direct Standing Charge (Use of Facilities & Nitrogen Top-Ups),£25.00,£30.00
+STANDARDMILEAGE,Standard Call-Out Fee (£1 per mile travelled),£1.00,£1.20
+STANDINGSURGERY,Standing Surgical Time (per hour),£343.92,£412.70
+STEGLATRO,Steglatro (Ertugliflozin) 15mg (per tablet),£2.94,£3.53
+STERILESALINE,Sterile Isotonic Saline for Injection (per ml),£0.12,£0.14
+WATERFORINJ,Sterile Water for Injection (per ml),£0.07,£0.09
+TUBEB,Stomach Tube Horse/Foal,£0.00,£0.00
+TUBEH,Stomach Tube Horse/Foal,£53.50,£64.20
+STRANGLESPCR,Strep equi equi (Strangles) PCR (Rainbow Lab),£32.00,£38.40
+BLOODSTRANGLES,Strep equi equi (Strangles) Serology (Rainbow Lab),£32.00,£38.40
+STRONGHOLD20to40,Stronghold Large Breed Dog (20-40Kg) (per 3 pipette box),£25.14,£30.17
+STRONGIDP,Strongid P Paste (per tube),£9.16,£10.99
+SUCRALFATEPASTE250,Sucralfate 500mg/ml Oral Paste (per 250ml tub),£156.00,£187.20
+SUCRALFATEPOWDER250,Sucralfate Oral Powder (per 250g pot),£62.00,£74.40
+SUCRALFATEPOWDER500,Sucralfate Oral Powder (per 500g pot),£112.00,£134.40
+SUDOCREM,Sudocrem 400g,£11.60,£13.92
+SUPRELORIN4,Suprelorin (4.7mg deslorelin) GnRH Implant Placement,£128.81,£154.58
+SURGEONFEE,Surgeon Fee,£1.03,£1.24
+SURGICALSPIRIT,Surgical Spirit 5L,£33.02,£39.62
+ENTROPION,Suture Lower Eyelids to Correct Entropion,£57.94,£69.53
+SWABCERVIX,Swab Cervix/Uterus (Incl Double-Guarded Swab & Charcoal Transport Swab),£38.11,£45.73
+SWABCLIT,Swab Clitoral Fossa & Sinuses (Incl Micro-Tip Charcoal Transport Swab),£18.00,£21.60
+SWABCORNEA,Swab Cornea for Culture/Cytology (includes local anaesthetic and consumables),£26.27,£31.52
+VAGINALSWAB,Swab Cranial Vagina for Microbiology,£22.15,£26.57
+STALLIONSWABS,"Swab Stallion Urethra, Urethal Fossa & Penile Shaft/Prepuce",£77.25,£92.70
+SWABSITE,Swab Tissue (Incl Standard-Tip Charcoal Transport Swab),£18.03,£21.63
+SYNOQUINLARGE,Synoquin Large Breed Dog Tablets (per box of 120),£69.30,£83.16
+TAPCOFFIN,Synovial Tap Coffin Joint,£57.42,£68.91
+TAPSTIFLE,Synovial Tap Stifle Joint,£71.07,£85.28
+BS,Take & Process Blood Sample,£17.50,£21.00
+TAPFETLOCK,Tap Fetlock Joint,£57.42,£68.91
+TAPHOCKTC,Tap Hock Tarsocrural Joint,£57.50,£69.00
+TAPHOCKTMT,Tap Hock Tarsometatarsal Joint,£57.50,£69.00
+WEATHERBYS,"TB Foal Weatherby’s ID, Blood Sample for DNA, Microchip & Postage",£87.55,£105.06
+MAREBUNDLE,"TB Mare Pre-Breeding EVA, EIA + Clitoral CEM Culture (incl sampling, lab fees & consumables)",£0.00,£0.00
+DRY TBSCHEME,TB Mare Scheme (Barren/Maiden),£745.00,£894.00
+WET TBSCHEME,TB Mare Scheme (Foaling Mare),£910.00,"£1,092.00"
+ELASTOPLAST7,Tensoplast Adhesive Bandage (per 7.5cm roll),£8.13,£9.76
+50MLSYRINGES,Terumo 3 Part 50ml Syringes (per box),£12.57,£15.08
+TERUMOGUIDEWIRE,"Terumo Single-Use Angio Guidewire Straight 0.018"" 260cm",£68.00,£81.60
+TOTALPROTEIN,Test Body Fluid Total Protein (Alb/Glob),£24.00,£28.80
+6002119,Test med,£2.00,£2.40
+TESTPRODUCT,Test product,£6.00,£7.20
+TESTOSTERONE,Testosterone Blood Test (Rainbow Lab),£32.00,£38.40
+TAT50,Tetanus Antitoxin Injection (per 50ml bottle),£190.96,£229.15
+TATPERML,Tetanus Antitoxin Injection (per ml),£3.33,£4.00
+AXIOMTHYROIDPANEL,Thyroid Standard Panel (TT4 & cTSH) (Axiom Lab),£48.37,£58.04
+THYRONORM100,Thyronorm (Thiamazole 5mg/ml) Oral Solution (per 100ml bottle),£54.09,£64.91
+THYRONORM30,Thyronorm (Thiamazole 5mg/ml) Oral Solution (per 30ml bottle),£21.65,£25.97
+TORBUGESIC,Torbugesic (Butorphanol 10mg/ml) Inj per ml,£22.00,£26.40
+BLOODTOTALCALCIUM,Total Calcium Blood Test (Rainbow Lab),£12.00,£14.40
+TRACHWASH,Tracheal Wash (includes sterile fluids and consumables),£27.30,£32.75
+TRACHEOSTOMYTUBE,Tracheostomy Tube (Temporary Placement and Hire of Device),£123.60,£148.32
+TRANQUINERVIN,Tranquinervin Acepromazine (ACP) 10mg/ml Injectable (per ml),£10.16,£12.19
+SCANFOETUS,Transabdominal Ultrasonographic Foetal Wellbeing Assessment,£131.33,£157.59
+RECTALUSBLADDER,Transrectal Ultrasound Exam Bladder,£49.18,£59.02
+SCANVAGINA,"Transvaginal Ultrasound Exam of Vagina, Cervix, Bladder + Perirectal Area",£56.65,£67.98
+TRAZODONE150,Trazodone 150mg Tablet,£4.17,£5.00
+TRENTALTABS,Trental (400mg Pentoxyphylline) (per tablet),£0.66,£0.79
+TRIMED,Trimediazine Oral (Box of 10 Sachets),£49.75,£59.70
+TROT,Trot Up Horse,£18.00,£21.60
+DOURINE,Trypanosoma equiperdum (Dourine) CFT Test (APHA),£40.38,£48.45
+TUFFROCK,Tuff Rock Foal Plus (per 1L container),£59.43,£71.32
+TWIN,Twin Reduction (14-16 days),£90.00,£108.00
+TWINSCHEME,Twin Reduction (14-16 days) (Scheme),£0.00,£0.00
+VETTING2STAGE,Two Stage Pre Purchase Vetting Examination (includes 6 months VDS blood storage),£255.00,£306.00
+INSURANCEVETTING2STAGE,Two Stage Vetting Examination for Insurance,£155.00,£186.00
+SCANABD,Ultrasound Scan Abdomen,£71.50,£85.80
+SCANCHEST,Ultrasound Scan Chest,£71.60,£85.92
+DISCOUNTCHESTSCAN,Ultrasound Scan Chest Special Discount,£35.50,£42.60
+SCANMARE,Ultrasound Scan Mare Reproductive Tract,£48.50,£58.20
+SCANPELVIS,Ultrasound Scan Pelvis,£90.50,£108.60
+SCANPLACENTA,Ultrasound Scan Placenta & Foetus (Per-Rectum),£70.00,£84.00
+SCANST,Ultrasound Scan Soft Tissue,£54.59,£65.51
+SCANTENDON1,Ultrasound Scan Tendons/Ligaments,£108.00,£129.60
+SCANTENDONFOLLOWUP,Ultrasound Scan Tendons/Ligaments - Follow Up Exam,£77.25,£92.70
+SCANTENDON2,Ultrasound Scan Tendons/Ligaments Prolonged,£158.00,£189.60
+SCANTESTICLESDOG,Ultrasound Scan Testicles Dog,£144.20,£173.04
+SCANUMB,Ultrasound Scan Umbilical Structures (Navel),£57.17,£68.60
+ASPIRATEUTERINEFLUID,Ultrasound-Guided Aspiration of Uterine Fluid,£66.00,£79.20
+TENDONSPLITTING,Ultrasound-Guided Tendon Splitting Surgery,£311.16,£373.40
+RINGHERNIA,Umbilical Hernia Ring Repair,£85.00,£102.00
+EXPORTUS,"United States Export Certification (Incl Pre-Export Documentation, Clinical Exam & Final Export Cert",£179.06,£214.87
+SVCAMACHO,Unscheduled Call-Out Malton Racing Yard,£20.60,£24.72
+FAILEDSEMENCOLLECTIONDOG,Unsuccessful Semen Collection Dog,£75.00,£90.00
+VIDEOSCOPESALES,Upper Respiratory Videoendoscopy for Sales (includes upload to repository),£97.85,£117.42
+URINALYSIS,Urinalysis Lab Fee,£19.83,£23.79
+URINEGGTCREATRATIO,Urine GGT:Creatinine Ratio (Rainbow Lab),£24.00,£28.80
+PYOSCANBITCH,US Scan Bitch Uterus for Pyometra,£75.00,£90.00
+SCANDOGPROSTATE,US Scan Dog Prostate,£77.25,£92.70
+SCANBITCHREPRO,US Scan Female Reproductive Tract,£212.50,£255.00
+SCANDOGREPRO,US Scan Male Genitourinary Tract,£169.95,£203.94
+UTEBIOPSY,Uterine Biopsy,£81.89,£98.26
+UTECYTCULSENS,"Uterine Culture, Sensitivity & Cytology (Rainbow Lab)",£40.00,£48.00
+PIPETTE,Uterine Infusion Pipette,£0.75,£0.90
+ULVL,Uterine Large Volume Lavage,£51.50,£61.80
+UTETUBE,Uterine Lavage Catheter (single use),£2.34,£2.81
+UTROGESTAN,Utrogestan 100mg (per capsule),£0.66,£0.79
+VDSKIT,VDS Blood Sampling Kit (Incl Postage & 6 Months Storage),£27.46,£32.95
+VENTIPULMININJECTABLE,Ventipulmin (Clenbuterol) Injectable (per ml),£2.20,£2.64
+VENTIPULMINGRANS,Ventipulmin Oral Granules (per 500g tub),£68.82,£82.59
+VENTIPULMINSYRUP,Ventipulmin Oral Syrup (per 355ml bottle),£65.94,£79.13
+RABIESVACC,Versiguard Rabies Vaccination,£30.32,£36.38
+VW,Vet Wrap Premium Cohesive Conforming Bandage (per roll),£2.28,£2.74
+VETCT,VetCT Remote Consultancy (per case),£36.05,£43.26
+VETERICYN500,Vetericyn VF 500ml wound spray,£23.75,£28.50
+VETIVEX100,Vetivex 1 Sterile Isotonic Solution (per 100ml bag),£6.52,£7.82
+XRAYVETTING,Vetting Radiography (includes up to 48 plates),£808.55,£970.26
+SCOPESTANDARD,Video-Endoscopic Examination,£103.00,£123.60
+SCOPETRAINER,Video-Endoscopic Examination (Trainers Special Discount),£81.50,£97.80
+CYSTOSCOPY1,"Videoendoscopic Bladder, Urethra & Trigone",£141.63,£169.95
+HYSTEROSCOPY,"Videoendoscopic Examination of Vagina, Cervix & Uterus (Hysteroscopy)",£180.25,£216.30
+VM,Visit Malton Racing Yard,£10.50,£12.60
+VBARKER,Visit Pasture House Farm (Paul Barker) (62 miles round trip),£51.00,£61.20
+VITBCOMPLEX,Vitamin B Complex Pro (ND) Injectable (per ml),£0.54,£0.65
+VITBCOMPLEXTROY,Vitamin B Complex TROY Injectable (per ml),£0.90,£1.08
+FRAGILEFOAL,Warmblood Fragile Foal Syndrome (WFFS) Genetic Test (Laboklin),£43.67,£52.41
+WETWIPES,Wet Wipes (per pack),£0.83,£1.00
+WCC,White Cell (Inflammatory Cell) Count (Rainbow Lab),£12.00,£14.40
+6002715,WRITE OFF DEBT,£0.00,£0.00
+PRESCRIPTION,Written Prescription,£20.60,£24.72
+REPORT,Written Veterinary Reporting (per 15 minutes),£32.50,£39.00
+YPOZANE3.75,Ypozane 3.75mg (per tablet),£6.00,£7.20
+ZYLEXIS,Zylexis Immune Stimulant (Inactivated Parapox ovis virus),£34.35,£41.22
