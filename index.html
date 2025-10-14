@@ -9,11 +9,14 @@
   <script src="app.js" defer></script>
   <style>
     :root{ --bg:#0b0d10; --panel:#12161b; --text:#e8eef6; --muted:#9fb1c4; --accent:#4da3ff; --ok:#21c07a; --border:#20262e; --shadow:rgba(0,0,0,.3);}
-    *{box-sizing:border-box} html,body{height:100%} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text)}
     .wrap{max-width:900px;margin:0 auto;padding:16px}
     h1{font-size:20px;margin:0 0 12px}
     .panel{background:var(--panel);border:1px solid var(--border);border-radius:10px;box-shadow:0 8px 20px var(--shadow);padding:12px}
     #search{width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:8px;background:#0e1217;color:var(--text);margin:4px 0 12px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
     .item{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px;border:1px solid var(--border);border-radius:10px;margin:10px 0;background:#0e1217}
     .item-main{flex:1;min-width:0}
     .code{font-weight:600}
@@ -21,7 +24,6 @@
     .price-pill{display:inline-block;padding:4px 8px;border:1px solid var(--border);border-radius:999px;font-size:12px;margin-right:8px}
     .copy-btn,.bulk-btn{padding:8px 12px;border:1px solid var(--border);border-radius:8px;background:#0e1217;color:var(--text);cursor:pointer}
     .copy-btn:active,.bulk-btn:active{transform:translateY(1px)}
-    .footer{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:8px}
     #meta{color:var(--muted);font-size:12px}
   </style>
 </head>
@@ -29,15 +31,15 @@
   <div class="wrap">
     <h1>Vet Code Lookup</h1>
     <div class="panel">
-     <input id="search" type="text"
-       placeholder="Search by code or description…"
-       autocomplete="off" autocorrect="off" autocapitalize="off"
-       spellcheck="false" enterkeyhint="search" />
-      <div id="results" aria-live="polite"></div>
-      <div class="footer">
-        <div id="meta">0 items</div>
+      <input id="search" type="text"
+             placeholder="Search by code or description…"
+             autocomplete="off" autocorrect="off" autocapitalize="off"
+             spellcheck="false" enterkeyhint="search" />
+      <div class="topbar">
         <button id="copySelected" class="bulk-btn" disabled>Copy selected codes</button>
+        <div id="meta">0 items</div>
       </div>
+      <div id="results" aria-live="polite"></div>
     </div>
   </div>
 </body>
